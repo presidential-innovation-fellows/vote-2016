@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700|Source+Sans+Pro:400,600,400italic);
+
+$base-font-family: "Source Sans Pro";
+$header-font-family: "Merriweather";
+
+$base-font-size: 1em;
+
+
+body {
+  font-family: $base-font-family;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font-family;
+}
+
+h1 {
+  font-size: $base-font-size * 2; // 16 * 2 = 32spx
+}
+
+h2 {
+  font-size: $base-font-size * 1.75; // 16 * 1.75 = 28px
+}
+
+h3 {
+  font-size: $base-font-size * 1.5; // 16 * 1.5 = 24px
+}
+
+h4 {
+  font-size: $base-font-size * 1.25; // 16 * 1.25 = 20px
+}
+
+h5 {
+  font-size: $base-font-size;
+}
+
+h6 {
+  font-size: $base-font-size;
+}

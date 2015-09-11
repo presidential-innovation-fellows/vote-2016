@@ -1,0 +1,43 @@
+%modal {
+  @include transform(translateY(10%));
+  @include transition(all 0.4s ease);
+  background: $white;
+  border: 2px solid $light-gray;
+  box-shadow: 0 3px 3px rgba($dark-gray, 0.1);
+  box-sizing: border-box;
+  height: 350px;
+  left: 50%;
+  margin: -175px 0 0 -250px;
+  opacity: 0;
+  padding: 2.25em 1.5em 1.5em;
+  position: absolute;
+  top: 50%;
+  visibility: hidden;
+  width: 500px;
+  z-index: 1000;
+
+  &.active {
+    @include transform(translateY(0));
+    opacity: 1;
+    visibility: visible;
+  }
+
+  h2 {
+    color: $brand-blue-darker;
+    text-align: center;
+  }
+
+  p {
+    line-height: 1.3em;
+    text-align: justify;
+  }
+
+  .action {
+    text-align: center;
+  }
+
+  .button {
+    font-size: 1.1em;
+    margin-top: 1.25em;
+  }
+}

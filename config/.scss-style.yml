@@ -1,0 +1,3 @@
+scss:
+  exclude:
+    - "assets/stylesheets/sass/bourbon/**"

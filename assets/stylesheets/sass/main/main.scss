@@ -1,0 +1,106 @@
+@import "bourbon/bourbon";
+@import "components/all";
+
+
+body {
+  font-size: 100%;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+aside,
+div,
+header {
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: $brand-blue;
+  border-radius: 0.25em;
+  box-shadow: none;
+  color: $white;
+  display: inline-block;
+  font-weight: 600;
+  padding: 0.8em 1.3em;
+  text-decoration: none;
+
+  &:active {
+    background-color: $brand-blue-darkest;
+  }
+
+  &:hover {
+    background-color: $brand-blue-darker;
+  }
+}
+
+.close {
+  color: $light-gray;
+  cursor: pointer;
+  font-family: "Helvetica", sans-serif;
+  font-size: 1.65em;
+  font-weight: 400;
+  line-height: 1em;
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+}
+
+.hero {
+  background-color: $light-gray;
+  color: $white;
+  height: 600px;
+  padding-top: 6em;
+
+  h1 {
+    font-size: 4em;
+    margin-bottom: 0.25em;
+  }
+
+  p {
+    line-height: 1.5em;
+    margin-top: 0;
+  }
+
+  .content {
+    margin: 0 auto;
+    max-width: 30em;
+    text-align: center;
+  }
+}
+
+.js {
+  .no-js-hide {
+    display: none;
+  }
+}
+
+.modal {
+  @extend %modal;
+}
+
+.state-select {
+  margin-top: 2em;
+
+  select {
+    @extend %select;
+  }
+}
+
+
+.usa {
+  background-color: $dark-gray;
+  color: $white;
+  font-size: 0.8em;
+  padding: 0.25em 0;
+  text-align: center;
+
+  img {
+    margin-right: 0.5em;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}

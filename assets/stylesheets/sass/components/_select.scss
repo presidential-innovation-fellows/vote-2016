@@ -1,0 +1,21 @@
+%select{
+  @include appearance(none);
+  background: $white url("../../../images/arrow-down.svg") no-repeat;
+  background-position: right 1.3em center;
+  background-size: 1em 1em;
+  border: 1px solid #5b616b;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: block;
+  font-size: 1em;
+  margin: 0.2em 0;
+  outline: none;
+  padding: 1em 0.7em;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+  }
+}
