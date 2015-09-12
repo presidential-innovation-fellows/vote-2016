@@ -1,70 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,700|Source+Sans+Pro:400,600,400italic);
-.modal {
-  -webkit-transform: translateY(10%);
-  -moz-transform: translateY(10%);
-  -ms-transform: translateY(10%);
-  -o-transform: translateY(10%);
-  transform: translateY(10%);
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  background: #ffffff;
-  border: 2px solid #aeb0b5;
-  box-shadow: 0 3px 3px rgba(50, 58, 69, 0.1);
-  box-sizing: border-box;
-  height: 350px;
-  left: 50%;
-  margin: -175px 0 0 -250px;
-  opacity: 0;
-  padding: 2.25em 1.5em 1.5em;
-  position: absolute;
-  top: 50%;
-  visibility: hidden;
-  width: 500px;
-  z-index: 1000; }
-  .active.modal {
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible; }
-  .modal h2 {
-    color: #205493;
-    text-align: center; }
-  .modal p {
-    line-height: 1.3em;
-    text-align: justify; }
-  .modal .action {
-    text-align: center; }
-  .modal .button {
-    font-size: 1.1em;
-    margin-top: 1.25em; }
-
-.state-select select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  background: #ffffff url("../../../images/arrow-down.svg") no-repeat;
-  background-position: right 1.3em center;
-  background-size: 1em 1em;
-  border: 1px solid #5b616b;
-  border-radius: 0;
-  box-sizing: border-box;
-  color: #000;
-  cursor: pointer;
-  display: block;
-  font-size: 1em;
-  margin: 0.2em 0;
-  outline: none;
-  padding: 1em 0.7em;
-  width: 100%; }
-  .state-select select:focus {
-    outline: none; }
-
 body {
   font-family: "Source Sans Pro";
   font-weight: 400; }
@@ -95,10 +29,74 @@ h5 {
 h6 {
   font-size: 1em; }
 
+.modal {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  background: #ffffff;
+  box-shadow: 0 3px 3px rgba(50, 58, 69, 0.1);
+  box-sizing: border-box;
+  height: 100%;
+  opacity: 0;
+  padding: 2.25em 1.5em 1.5em;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+  z-index: 1000; }
+  .active.modal {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible; }
+  .modal h2 {
+    color: #205493;
+    text-align: center; }
+  .modal p {
+    line-height: 1.3em;
+    text-align: justify; }
+  .modal .action {
+    text-align: center; }
+  .modal .button {
+    font-size: 1.1em;
+    margin-top: 1.25em; }
+
+.state-select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background: #ffffff url("../../../images/arrow-down.svg") no-repeat;
+  background-position: right 1.3em center;
+  background-size: 1em 1em;
+  border: none;
+  border-radius: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  font-family: "Source Sans Pro";
+  font-size: 1em;
+  margin: 0.2em 0;
+  outline: none;
+  padding: 1em 0.7em;
+  width: 100%; }
+  .state-select select:focus {
+    outline: none; }
+
 body {
   font-size: 100%;
   line-height: 1;
   margin: 0;
+  overflow: hidden;
   padding: 0; }
 
 aside,
@@ -132,26 +130,40 @@ header {
   top: 0.5em; }
 
 .hero {
-  background-color: #aeb0b5;
+  background-image: linear-gradient(60deg, rgba(152, 27, 30, 0.65) -10%, rgba(32, 84, 147, 0.75) 70%), url("../../../images/mullet1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #ffffff;
   height: 600px;
-  padding-top: 6em; }
+  padding-top: 3em; }
   .hero h1 {
-    font-size: 4em;
+    font-size: 4.5em;
     margin-bottom: 0.25em; }
   .hero p {
+    font-size: 1.25em;
     line-height: 1.5em;
     margin-top: 0; }
   .hero .content {
     margin: 0 auto;
-    max-width: 30em;
+    max-width: 50em;
     text-align: center; }
+  .hero .description {
+    margin: 0 auto;
+    max-width: 30em; }
 
 .js .no-js-hide {
   display: none; }
 
+.modal iframe {
+  border: none;
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%; }
+
 .state-select {
-  margin-top: 2em; }
+  margin-top: 1em; }
 
 .usa {
   background-color: #323a45;

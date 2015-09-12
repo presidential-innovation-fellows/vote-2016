@@ -6,6 +6,7 @@ body {
   font-size: 100%;
   line-height: 1;
   margin: 0;
+  overflow: hidden;
   padding: 0;
 }
 
@@ -47,25 +48,33 @@ header {
 }
 
 .hero {
-  background-color: $light-gray;
+  background-image: linear-gradient(60deg, rgba($brand-red-darker, 0.65) -10%, rgba($brand-blue-darker, 0.75) 70%), url("../../../images/mullet1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: $white;
   height: 600px;
-  padding-top: 6em;
+  padding-top: 3em;
 
   h1 {
-    font-size: 4em;
+    font-size: 4.5em;
     margin-bottom: 0.25em;
   }
 
   p {
+    font-size: 1.25em;
     line-height: 1.5em;
     margin-top: 0;
   }
 
   .content {
     margin: 0 auto;
-    max-width: 30em;
+    max-width: 50em;
     text-align: center;
+  }
+
+  .description {
+    margin: 0 auto;
+    max-width: 30em;
   }
 }
 
@@ -77,10 +86,19 @@ header {
 
 .modal {
   @extend %modal;
+
+  iframe {
+    border: none;
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+  }
 }
 
 .state-select {
-  margin-top: 2em;
+  margin-top: 1em;
 
   select {
     @extend %select;
