@@ -51,11 +51,11 @@ vote2016.stateSelect = {
         state = $.grep(stateWebsites, function(e){ return e.state == selectedState; });
 
     if (state.length == 0) {
-      alert("State not found.");
+      vote2016.stateSelect.loadTurboVote();
     } else if (state.length == 1) {
       vote2016.stateSelect.loadStateModal(state);
     } else {
-      alert("Error - Duplicate States");
+      alert("Error - Something Went Wrong");
     }
   },
 
@@ -65,6 +65,10 @@ vote2016.stateSelect = {
     $(".state-modal .state-name").text(stateName);
     $(".state-modal .state-link").attr("href", stateLink);
     $(".state-modal").addClass("active");
+  },
+
+  loadTurboVote: function() {
+    $(".turbovote-modal").addClass("active");
   }
 }
 
