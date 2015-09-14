@@ -2,15 +2,17 @@
   @include transform(translateY(100%));
   @include transition(all 0.4s ease);
   background: $white;
-  box-shadow: 0 3px 3px rgba($dark-gray, 0.1);
+  bottom: 2em;
+  box-shadow: 0 3px 3px rgba($dark-gray, 0.2);
   box-sizing: border-box;
-  height: 100%;
+  left: 50%;
+  margin-left: -320px;
   opacity: 0;
-  padding: 2.25em 1.5em 1.5em;
+  padding: 2.25em 2em 1.5em;
   position: fixed;
-  top: 0;
+  top: 2em;
   visibility: hidden;
-  width: 100%;
+  width: 620px;
   z-index: 1000;
 
   &.active {
@@ -36,5 +38,16 @@
   .button {
     font-size: 1.1em;
     margin-top: 1.25em;
+  }
+
+  .close {
+    color: $white;
+    cursor: pointer;
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 1em;
+    position: absolute;
+    right: -0.75em;
+    top: -0.3em;
   }
 }

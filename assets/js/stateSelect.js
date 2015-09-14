@@ -31,6 +31,7 @@ vote2016.stateSelect = {
   bindModalClose: function() {
     $(".close").bind("click", function(e){
       e.preventDefault();
+      $(".overlay").removeClass("active");
       $(".modal").removeClass("active");
     })
   },
@@ -64,10 +65,12 @@ vote2016.stateSelect = {
         stateLink = state[0].website;
     $(".state-modal .state-name").text(stateName);
     $(".state-modal .state-link").attr("href", stateLink);
+    $(".overlay").addClass("active");
     $(".state-modal").addClass("active");
   },
 
   loadTurboVote: function() {
+    $(".overlay").addClass("active");
     $(".turbovote-modal").addClass("active");
   }
 }

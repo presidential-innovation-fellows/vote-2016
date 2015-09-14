@@ -50,15 +50,17 @@ h6 {
   -moz-transition: all 0.4s ease;
   transition: all 0.4s ease;
   background: #ffffff;
-  box-shadow: 0 3px 3px rgba(50, 58, 69, 0.1);
+  bottom: 2em;
+  box-shadow: 0 3px 3px rgba(50, 58, 69, 0.2);
   box-sizing: border-box;
-  height: 100%;
+  left: 50%;
+  margin-left: -320px;
   opacity: 0;
-  padding: 2.25em 1.5em 1.5em;
+  padding: 2.25em 2em 1.5em;
   position: fixed;
-  top: 0;
+  top: 2em;
   visibility: hidden;
-  width: 100%;
+  width: 620px;
   z-index: 1000; }
   .active.modal {
     -webkit-transform: translateY(0);
@@ -79,6 +81,15 @@ h6 {
   .modal .button {
     font-size: 1.1em;
     margin-top: 1.25em; }
+  .modal .close {
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 1em;
+    position: absolute;
+    right: -0.75em;
+    top: -0.3em; }
 
 .state-select select {
   -webkit-appearance: none;
@@ -132,17 +143,6 @@ figure {
     background-color: #112e51; }
   .button:hover {
     background-color: #205493; }
-
-.close {
-  color: #aeb0b5;
-  cursor: pointer;
-  font-family: "Helvetica", sans-serif;
-  font-size: 1.65em;
-  font-weight: 400;
-  line-height: 1em;
-  position: absolute;
-  right: 0.5em;
-  top: 0.5em; }
 
 .footer {
   background: #323a45;
@@ -212,6 +212,25 @@ figure {
   margin: 0 auto;
   max-width: 600px;
   width: 100%; }
+
+.overlay {
+  background-color: rgba(50, 58, 69, 0.2);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  visibility: hidden; }
+  .overlay.active {
+    opacity: 1;
+    visibility: visible; }
+
+.state-modal {
+  bottom: auto;
+  height: 320px;
+  margin: -160px 0 0 -320px;
+  top: 50%; }
 
 .state-select {
   margin: 1em auto 0;
