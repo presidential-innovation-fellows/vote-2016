@@ -6,7 +6,6 @@ body {
   font-size: 100%;
   line-height: 1;
   margin: 0;
-  overflow: hidden;
   padding: 0;
 }
 
@@ -48,7 +47,7 @@ header {
 }
 
 .hero {
-  background-image: linear-gradient(60deg, rgba($brand-red-darker, 0.65) -10%, rgba($brand-blue-darker, 0.75) 70%), url("../../../images/mullet1.jpg");
+  background-image: linear-gradient(60deg, rgba($brand-red, 0.65) -10%, rgba($brand-blue, 0.75) 90%), url("../../../images/mullet2_lightened.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: $white;
@@ -56,7 +55,8 @@ header {
   padding-top: 3em;
 
   h1 {
-    font-size: 4.5em;
+    font-size: 3em;
+    font-weight: 400;
     margin-bottom: 0.25em;
   }
 
@@ -120,5 +120,26 @@ header {
   p {
     margin: 0;
     padding: 0;
+  }
+}
+
+.video {
+  padding: 4em 0;
+}
+
+.video-container {
+  height: 0;
+  margin: 0 auto;
+  max-width: 900px;
+  padding-bottom: 45.7%;
+  position: relative;
+
+  iframe {
+    border: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
   }
 }
