@@ -1,4 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,700|Source+Sans+Pro:400,600,400italic);
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
 body {
   font-family: "Source Sans Pro";
   font-weight: 400; }
@@ -96,7 +102,8 @@ body {
   font-size: 100%;
   line-height: 1;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  -webkit-font-smoothing: antialiased; }
 
 aside,
 div,
@@ -189,12 +196,28 @@ header {
 
 .video {
   padding: 4em 0; }
+  .video h1 {
+    color: #0071bc;
+    margin: 0 0 0.25em; }
+  .video p {
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 1.5em; }
+  .video .col {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 47.58542%; }
+    .video .col:last-child {
+      margin-right: 0; }
+  .video .content-container {
+    margin: 0 auto;
+    max-width: 900px; }
 
 .video-container {
   height: 0;
   margin: 0 auto;
-  max-width: 900px;
-  padding-bottom: 45.7%;
+  padding-bottom: 56%;
   position: relative; }
   .video-container iframe {
     border: none;

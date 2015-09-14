@@ -1,4 +1,5 @@
 @import "bourbon/bourbon";
+@import "neat/neat";
 @import "components/all";
 
 
@@ -7,6 +8,7 @@ body {
   line-height: 1;
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
 aside,
@@ -136,13 +138,32 @@ header {
 
 .video {
   padding: 4em 0;
+
+  h1 {
+    color: $brand-blue;
+    margin: 0 0 0.25em;
+  }
+
+  p {
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 1.5em;
+  }
+
+  .col {
+    @include span-columns(3 of 6);
+  }
+
+  .content-container {
+    margin: 0 auto;
+    max-width: 900px;
+  }
 }
 
 .video-container {
   height: 0;
   margin: 0 auto;
-  max-width: 900px;
-  padding-bottom: 45.7%;
+  padding-bottom: 56%;
   position: relative;
 
   iframe {
