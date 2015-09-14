@@ -17,5 +17,5 @@ vote2016.heroAnimation = {
 $(document).ready(function(){
   setInterval(function () {
     vote2016.heroAnimation.textChange();
-  }, 2000);
+  }, 2250);
 });

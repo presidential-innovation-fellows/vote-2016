@@ -129,27 +129,31 @@ header {
   top: 0.5em; }
 
 .hero {
-  background-image: linear-gradient(60deg, rgba(227, 28, 61, 0.65) -10%, rgba(0, 113, 188, 0.75) 90%), url("../../../images/mullet2_lightened.jpg");
+  background-image: linear-gradient(60deg, rgba(0, 52, 86, 0.6) -10%, rgba(35, 167, 255, 0.7) 90%), url("../../../images/mullet2_lightened.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
   height: 600px;
-  padding-top: 3em; }
+  padding-top: 4em; }
   .hero h1 {
-    font-size: 3em;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    font-size: 4.5em;
     font-weight: 400;
-    margin-bottom: 0.25em; }
+    margin-bottom: 0.5em; }
   .hero p {
+    font-family: "Merriweather";
     font-size: 1.25em;
     line-height: 1.5em;
-    margin-top: 0; }
+    margin: 0; }
   .hero .content {
     margin: 0 auto;
     max-width: 50em;
     text-align: center; }
   .hero .description {
     margin: 0 auto;
-    max-width: 30em; }
+    max-width: 40em; }
 
 .js .no-js-hide {
   display: none; }
@@ -163,7 +167,13 @@ header {
   width: 100%; }
 
 .state-select {
-  margin-top: 1em; }
+  margin: 1em auto 0;
+  max-width: 30em; }
+  .state-select label {
+    visibility: hidden; }
+
+.who {
+  display: block; }
 
 .usa {
   background-color: #323a45;
