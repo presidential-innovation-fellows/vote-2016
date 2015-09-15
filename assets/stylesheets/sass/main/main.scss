@@ -48,12 +48,15 @@ figure {
 
   .container {
     @extend %container;
-    @include clearfix;
   }
 
   .gsa-logo {
     float: left;
     width: 75px;
+  }
+
+  .row {
+    @include clearfix;
   }
 
   .site-description {
@@ -93,6 +96,7 @@ figure {
 .footer-links {
   list-style: none;
   margin: 0;
+  padding: 0;
 
   @include media($medium-screen) {
     margin-top: 1em;
