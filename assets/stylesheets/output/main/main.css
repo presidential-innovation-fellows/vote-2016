@@ -124,11 +124,10 @@ h6 {
   font-family: "Source Sans Pro";
   font-size: 1em;
   margin: 0.2em 0;
-  outline: none;
   padding: 1em 0.7em;
   width: 100%; }
   .state-select select:focus {
-    outline: none; }
+    box-shadow: 0 2px 2px rgba(227, 28, 61, 0.1); }
 
 body {
   font-size: 100%;
@@ -193,11 +192,29 @@ figure {
     width: 47.58542%; }
     .footer-col:last-child {
       margin-right: 0; } }
+.footer-col a {
+  display: block; }
 .footer-col img {
   width: 100%; }
 
+.footer-links {
+  list-style: none;
+  margin: 0; }
+  @media screen and (min-width: 40em) {
+    .footer-links {
+      margin-top: 1em; } }
+  .footer-links a {
+    color: #b3b3b3;
+    text-decoration: none; }
+    .footer-links a:hover {
+      color: #ffffff; }
+  .footer-links li {
+    display: inline-block;
+    font-size: 0.85em;
+    margin: 0 1em 0.5em 0; }
+
 .hero {
-  background-image: linear-gradient(60deg, rgba(0, 52, 86, 0.6) -10%, rgba(35, 167, 255, 0.7) 90%), url("../../../images/mullet2_lightened.jpg");
+  background-image: linear-gradient(60deg, rgba(0, 36, 61, 0.7) -10%, rgba(0, 144, 239, 0.8) 100%), url("../../../images/mullet2_lightened.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
