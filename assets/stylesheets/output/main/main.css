@@ -208,7 +208,7 @@ figure {
 .modal iframe {
   border: none;
   display: block;
-  height: 100%;
+  height: 108%;
   margin: 0 auto;
   max-width: 600px;
   width: 100%; }
@@ -240,7 +240,7 @@ figure {
 
 .who {
   display: block;
-  margin-left: 0.5em; }
+  margin-left: 0.35em; }
 
 .usa {
   background-color: #323a45;

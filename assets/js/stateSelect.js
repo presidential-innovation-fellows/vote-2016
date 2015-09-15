@@ -73,6 +73,6 @@ vote2016.stateSelect = {
     $(".overlay").addClass("active");
     $(".turbovote-modal").addClass("active");
   }
-}
+};
 
 $(document).ready(vote2016.stateSelect.bindFunctions());
