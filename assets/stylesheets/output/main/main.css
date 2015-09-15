@@ -44,11 +44,11 @@ h6 {
   font-size: 1em; }
 
 .modal {
-  -webkit-transform: translateY(100%);
-  -moz-transform: translateY(100%);
-  -ms-transform: translateY(100%);
-  -o-transform: translateY(100%);
-  transform: translateY(100%);
+  -webkit-transform: translateY(-10%);
+  -moz-transform: translateY(-10%);
+  -ms-transform: translateY(-10%);
+  -o-transform: translateY(-10%);
+  transform: translateY(-10%);
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -122,10 +122,14 @@ h6 {
   cursor: pointer;
   display: block;
   font-family: "Source Sans Pro";
-  font-size: 1em;
+  font-size: 0.9em;
   margin: 0.2em 0;
-  padding: 1em 0.7em;
+  padding: 0.7em;
   width: 100%; }
+  @media screen and (min-width: 40em) {
+    .state-select select {
+      font-size: 1em;
+      padding: 1em 0.7em; } }
   .state-select select:focus {
     box-shadow: 0 2px 2px rgba(227, 28, 61, 0.1); }
 
@@ -138,8 +142,10 @@ body {
 
 aside,
 div,
-header {
-  box-sizing: border-box; }
+header,
+section {
+  box-sizing: border-box;
+  display: block; }
 
 figure {
   margin: 0;
@@ -218,7 +224,7 @@ figure {
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
-  height: 300px;
+  height: 320px;
   padding-top: 2em; }
   @media screen and (min-width: 40em) {
     .hero {
@@ -283,6 +289,30 @@ figure {
   .overlay.active {
     opacity: 1;
     visibility: visible; }
+
+.social-buttons {
+  margin-top: 1.5em;
+  text-align: center; }
+  @media screen and (min-width: 40em) {
+    .social-buttons {
+      margin-top: 3em; } }
+  .social-buttons h2 {
+    font-family: "Source Sans Pro";
+    font-size: 1.3em; }
+  .social-buttons img {
+    width: 100%; }
+  .social-buttons li {
+    display: inline-block;
+    width: 30px; }
+    @media screen and (min-width: 40em) {
+      .social-buttons li {
+        width: 38px; } }
+    .social-buttons li:first-child {
+      margin-right: 1em; }
+  .social-buttons ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0; }
 
 @media screen and (min-width: 40em) {
   .state-modal {

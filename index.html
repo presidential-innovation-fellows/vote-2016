@@ -79,7 +79,7 @@
                 <option value="CO">Colorado</option>
                 <option value="CT">Connecticut</option>
                 <option value="DE">Delaware</option>
-                <option value="DC">District of Colombia</option>
+                <option value="DC">District of Columbia</option>
                 <option value="FL">Florida</option>
                 <option value="GA">Georgia</option>
                 <option value="HI">Hawaii</option>
@@ -124,6 +124,20 @@
                 <option value="WY">Wyoming</option>
               </select>
             </form>
+          </div>
+          <div class="social-buttons">
+            <ul>
+              <li>
+                <a href="https://twitter.com/home?status=Join%20millions%20of%20other%20Americans%20who%20are%20registered%20to%20vote%20-%20%20https%3A//vote.usa.gov/" target="blank">
+                  <img alt="Twitter Button" src="assets/images/twitter.svg">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//vote.usa.gov/" target="_blank">
+                  <img alt="Facebook Button" src="assets/images/facebook.svg">
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -183,25 +197,28 @@
       </section>
     </div>
 
-    <div class="modal turbovote-modal">
-      <div class="close">
-        x
-      </div>
-      <iframe id="turbovote-iframe" name="turbovote-iframe" src="https://widget-voteusa.turbovote.org/m/register/basics" scrolling="auto"></iframe>
-    </div>
+    <div class="modals">
 
-    <div class="modal state-modal">
-      <div class="close">
-        x
+      <div class="modal turbovote-modal">
+        <div class="close">
+          x
+        </div>
+        <iframe id="turbovote-iframe" name="turbovote-iframe" src="https://widget-voteusa.turbovote.org/m/register/basics" scrolling="auto"></iframe>
       </div>
-      <h2>
-        Register to Vote With <span class="state-name">State Name</span>
-      </h2>
-      <p>
-        <span class="state-name">State Name</span> enables residents to register through their online voter registration portal. Click the link below to be redirected to your voter registration website.
-      </p>
-      <div class="action">
-        <a class="button state-link" href="#" target="_blank">Register to Vote</a>
+
+      <div class="modal state-modal">
+        <div class="close">
+          x
+        </div>
+        <h2>
+          Register to Vote With <span class="state-name">State Name</span>
+        </h2>
+        <p>
+          <span class="state-name">State Name</span> enables residents to register through their online voter registration portal. Click the link below to be redirected to your voter registration website.
+        </p>
+        <div class="action">
+          <a class="button state-link" href="#" target="_blank">Register to Vote</a>
+        </div>
       </div>
     </div>
 

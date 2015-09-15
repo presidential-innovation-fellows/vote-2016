@@ -12,8 +12,10 @@ body {
 
 aside,
 div,
-header {
+header,
+section {
   box-sizing: border-box;
+  display: block;
 }
 
 figure {
@@ -117,7 +119,7 @@ figure {
   background-repeat: no-repeat;
   background-size: cover;
   color: $white;
-  height: 300px;
+  height: 320px;
   padding-top: 2em;
 
   @include media($medium-screen) {
@@ -210,6 +212,43 @@ figure {
   &.active {
     opacity: 1;
     visibility: visible;
+  }
+}
+
+.social-buttons {
+  margin-top: 1.5em;
+  text-align: center;
+
+  @include media($medium-screen) {
+    margin-top: 3em;
+  }
+
+  h2 {
+    font-family: $base-font-family;
+    font-size: 1.3em;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  li {
+    display: inline-block;
+    width: 30px;
+
+    @include media($medium-screen) {
+      width: 38px;
+    }
+
+    &:first-child {
+      margin-right: 1em;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
   }
 }
 

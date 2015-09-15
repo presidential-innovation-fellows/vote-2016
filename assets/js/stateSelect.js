@@ -26,7 +26,7 @@ var stateWebsites = [
   { "state": "WA", "website": "https://wei.sos.wa.gov/agency/osos/en/pages/myvote.aspx" }
 ]
 
-vote2016.stateSelect = {
+vote2016.website = {
 
   bindModalClose: function() {
     $(".close").bind("click", function(e){
@@ -37,13 +37,24 @@ vote2016.stateSelect = {
   },
 
   bindFunctions: function() {
-    vote2016.stateSelect.bindModalClose();
-    vote2016.stateSelect.bindStateSelect();
+    vote2016.website.bindModalClose();
+    vote2016.website.bindSocialButtons();
+    vote2016.website.bindStateSelect();
+  },
+
+  bindSocialButtons: function() {
+    $(".social-buttons a").on("click", function(e){
+      e.preventDefault();
+      var url = $(this).attr("href");
+
+      window.open(url, "targetWindow", "height=375,width=500");
+    });
+
   },
 
   bindStateSelect: function() {
     $(".state-select select").bind("change", function(){
-      vote2016.stateSelect.checkWebsite($(this));
+      vote2016.website.checkWebsite($(this));
     })
   },
 
@@ -52,9 +63,9 @@ vote2016.stateSelect = {
         state = $.grep(stateWebsites, function(e){ return e.state == selectedState; });
 
     if (state.length == 0) {
-      vote2016.stateSelect.loadTurboVote();
+      vote2016.website.loadTurboVote();
     } else if (state.length == 1) {
-      vote2016.stateSelect.loadStateModal(state);
+      vote2016.website.loadStateModal(state);
     } else {
       alert("Error - Something Went Wrong");
     }
@@ -75,4 +86,4 @@ vote2016.stateSelect = {
   }
 };
 
-$(document).ready(vote2016.stateSelect.bindFunctions());
+$(document).ready(vote2016.website.bindFunctions());
