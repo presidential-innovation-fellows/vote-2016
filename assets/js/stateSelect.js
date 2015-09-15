@@ -35,15 +35,23 @@ var stateWebsites = [
 
 vote2016.website = {
 
+  bindActionClick: function() {
+    $(".action a").on("click", function(e){
+      e.preventDefault();
+      $(".slide-container").addClass("right");
+    });
+  },
+
   bindModalClose: function() {
     $(".close").bind("click", function(e){
       e.preventDefault();
       $(".overlay").removeClass("active");
       $(".modal").removeClass("active");
-    })
+    });
   },
 
   bindFunctions: function() {
+    vote2016.website.bindActionClick();
     vote2016.website.bindModalClose();
     vote2016.website.bindSocialButtons();
     vote2016.website.bindStateSelect();
@@ -62,7 +70,7 @@ vote2016.website = {
   bindStateSelect: function() {
     $(".state-select select").bind("change", function(){
       vote2016.website.checkWebsite($(this));
-    })
+    });
   },
 
   checkWebsite: function(self) {

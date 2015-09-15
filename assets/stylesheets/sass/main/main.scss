@@ -215,6 +215,47 @@ figure {
   }
 }
 
+.intro-slide {
+
+  h2 {
+    font-size: 2em;
+    margin: 0.5em 0 1em;
+  }
+
+  h3 {
+    font-size: 1.25em;
+    margin: 0;
+    padding-top: 1em;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .content {
+    @include span-columns(9);
+  }
+
+  .image {
+    float: left;
+    height: 100px;
+    width: 100px;
+
+    img {
+      width: 78%;
+    }
+  }
+
+  .step {
+    @include clearfix;
+    border-top: 1px solid $light-gray;
+
+    &:first-child {
+      border-top: 0;
+    }
+  }
+}
+
 .js {
   .no-js-hide {
     display: none;
@@ -337,6 +378,38 @@ figure {
   }
 }
 
+.slides {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  .slide {
+    float: left;
+    height: 100%;
+    min-width: 556px;
+    width: 50%;
+  }
+
+  .slide-container {
+    @include transition(all 0.4s ease);
+    height: 100%;
+    left: 0;
+    position: absolute;
+
+    &.right {
+      left: -100%;
+    }
+  }
+}
+
+.active {
+
+  .slide-container {
+    width: 200%;
+  }
+}
+
 .state-modal {
 
   @include media($medium-screen) {
@@ -397,7 +470,7 @@ figure {
   }
 
   .col {
-    @include  media($medium-screen) {
+    @include media($medium-screen) {
       @include span-columns(3 of 6);
 
       &.video-col {
@@ -416,19 +489,23 @@ figure {
   }
 
   .video-content {
-    h1{
+
+    h1 {
       font-size: 1.3em;
     }
-    p{
+
+    p {
       font-size:1em;
       line-height:1.4em;
     }
 
     @include media($medium-screen) {
-      h1{
+
+      h1 {
         font-size: 2em;
       }
-      p{
+
+      p {
         font-size:1.1em;
         line-height:1.5em;
       }

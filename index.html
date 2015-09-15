@@ -145,6 +145,7 @@
               </select>
             </form>
           </div>
+
           <div class="social-buttons">
             <ul>
               <li>
@@ -158,7 +159,6 @@
                 </a>
               </li>
             </ul>
-          </div>
         </div>
       </section>
 
@@ -234,28 +234,68 @@
       </section>
     </div>
 
-    <div class="modals">
-
-      <div class="modal turbovote-modal">
-        <div class="close">
-          x
-        </div>
-        <iframe id="turbovote-iframe" name="turbovote-iframe" src="https://widget-voteusa.turbovote.org/m/register/basics" scrolling="auto"></iframe>
+    <div class="modal turbovote-modal">
+      <div class="close">
+        x
       </div>
+      <div class="slides">
+        <div class="slide-container">
+          <div class="intro-slide slide">
+            <header>
+              <h2>
+                Register to Vote
+              </h2>
+            </header>
+            <ul>
+              <li class="step">
+                <figure class="image">
+                  <img alt="grey form icon" src="assets/images/grey form icon.png" id="grey form icon">
+                </figure>
+                <div class="content">
+                  <h3>Step 1</h3>
+                  <p>Use TurboVote™ to complete your voter registration online.</p>
+                </div>
+              </li>
+              <li class="step">
+                <figure class="image">
+                  <img alt="grey mail icon" src="assets/images/grey mail icon.png" id="grey mail icon">
+                </figure>
+                <div class="content">
+                  <h3>Step 2</h3>
+                  <p>Print and send the form TurboVote™ generates for you.</p>
+                </div>
+              </li>
+              <li class="step">
+                <figure class="image">
+                  <img alt="grey vote icon v2" src="assets/images/grey vote icon v2.png" id="grey vote icon v2">
+                </figure>
+                <div class="content">
+                  <h3>Step 3</h3>
+                  <p>Vote in the upcoming election!</p>
+                </div>
+              </li>
+            </ul>
+            <div class="action">
+              <a class="button state-link" href="#" target="_blank">Let's do it</a>
+            </div>
+          </div>
+          <iframe class="slide" id="turbovote-iframe" name="turbovote-iframe" src="https://widget-voteusa.turbovote.org/m/register/basics" scrolling="auto"></iframe>
+        </div>
+      </div>
+    </div>
 
-      <div class="modal state-modal">
-        <div class="close">
-          x
-        </div>
-        <h2>
-          Register to Vote With <span class="state-name">State Name</span>
-        </h2>
-        <p>
-          <span class="state-name">State Name</span> enables residents to register through their online voter registration portal. Click the link below to be redirected to your voter registration website.
-        </p>
-        <div class="action">
-          <a class="button state-link" href="#" target="_blank">Register to Vote</a>
-        </div>
+    <div class="modal state-modal">
+      <div class="close">
+        x
+      </div>
+      <h2>
+        Register to Vote With <span class="state-name">State Name</span>
+      </h2>
+      <p>
+        <span class="state-name">State Name</span> enables residents to register through their online voter registration portal. Click the link below to be redirected to your voter registration website.
+      </p>
+      <div class="action">
+        <a class="button state-link" href="#" target="_blank">Register to Vote</a>
       </div>
     </div>
 
