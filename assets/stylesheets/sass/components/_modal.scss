@@ -2,18 +2,25 @@
   @include transform(translateY(100%));
   @include transition(all 0.4s ease);
   background: $white;
-  bottom: 2em;
+  bottom: 0;
   box-shadow: 0 3px 3px rgba($dark-gray, 0.2);
   box-sizing: border-box;
-  left: 50%;
-  margin-left: -320px;
   opacity: 0;
-  padding: 2.25em 2em 1.5em;
+  padding: 2em 2em 1em;
   position: fixed;
-  top: 2em;
+  top: 0;
   visibility: hidden;
-  width: 620px;
+  width: 100%;
   z-index: 1000;
+
+  @include media($medium-screen) {
+    bottom: 2em;
+    left: 50%;
+    margin-left: -320px;
+    padding: 2.25em 2em 1.5em;
+    top: 2em;
+    width: 620px;
+  }
 
   &.active {
     @include transform(translateY(0));
@@ -41,13 +48,21 @@
   }
 
   .close {
-    color: $white;
+    color: $dark-gray;
     cursor: pointer;
-    font-size: 3em;
-    font-weight: 400;
+    font-size: 1.5em;
+    font-weight: bold;
     line-height: 1em;
     position: absolute;
-    right: -0.75em;
-    top: -0.3em;
+    right: 0.25em;
+    top: 0.25em;
+
+    @include media($medium-screen) {
+      color: $white;
+      font-size: 3em;
+      font-weight: 400;
+      right: -0.75em;
+      top: -0.3em;
+    }
   }
 }

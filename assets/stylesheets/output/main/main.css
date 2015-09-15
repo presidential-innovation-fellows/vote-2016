@@ -5,10 +5,13 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-.footer .container {
+.footer .container, .hero .content, .video .content-container {
   margin: 0 auto;
   max-width: 68em;
-  padding: 0 2.5em; }
+  padding: 0 1em; }
+  @media screen and (min-width: 40em) {
+    .footer .container, .hero .content, .video .content-container {
+      padding: 0 2.5em; } }
 
 body {
   font-family: "Source Sans Pro";
@@ -50,18 +53,24 @@ h6 {
   -moz-transition: all 0.4s ease;
   transition: all 0.4s ease;
   background: #ffffff;
-  bottom: 2em;
+  bottom: 0;
   box-shadow: 0 3px 3px rgba(50, 58, 69, 0.2);
   box-sizing: border-box;
-  left: 50%;
-  margin-left: -320px;
   opacity: 0;
-  padding: 2.25em 2em 1.5em;
+  padding: 2em 2em 1em;
   position: fixed;
-  top: 2em;
+  top: 0;
   visibility: hidden;
-  width: 620px;
+  width: 100%;
   z-index: 1000; }
+  @media screen and (min-width: 40em) {
+    .modal {
+      bottom: 2em;
+      left: 50%;
+      margin-left: -320px;
+      padding: 2.25em 2em 1.5em;
+      top: 2em;
+      width: 620px; } }
   .active.modal {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -82,14 +91,21 @@ h6 {
     font-size: 1.1em;
     margin-top: 1.25em; }
   .modal .close {
-    color: #ffffff;
+    color: #323a45;
     cursor: pointer;
-    font-size: 3em;
-    font-weight: 400;
+    font-size: 1.5em;
+    font-weight: bold;
     line-height: 1em;
     position: absolute;
-    right: -0.75em;
-    top: -0.3em; }
+    right: 0.25em;
+    top: 0.25em; }
+    @media screen and (min-width: 40em) {
+      .modal .close {
+        color: #ffffff;
+        font-size: 3em;
+        font-weight: 400;
+        right: -0.75em;
+        top: -0.3em; } }
 
 .state-select select {
   -webkit-appearance: none;
@@ -162,45 +178,70 @@ figure {
     padding-left: 1em;
     width: auto; }
   .footer .usa-logo {
-    float: right;
+    margin-top: 2em;
     width: 150px; }
+    @media screen and (min-width: 40em) {
+      .footer .usa-logo {
+        float: right;
+        margin-top: 0; } }
 
-.footer-col {
-  float: left;
-  display: block;
-  margin-right: 4.82916%;
-  width: 47.58542%; }
-  .footer-col:last-child {
-    margin-right: 0; }
-  .footer-col img {
-    width: 100%; }
+@media screen and (min-width: 40em) {
+  .footer-col {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 47.58542%; }
+    .footer-col:last-child {
+      margin-right: 0; } }
+.footer-col img {
+  width: 100%; }
 
 .hero {
   background-image: linear-gradient(60deg, rgba(0, 52, 86, 0.6) -10%, rgba(35, 167, 255, 0.7) 90%), url("../../../images/mullet2_lightened.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
-  height: 600px;
-  padding-top: 4em; }
-  .hero h1 {
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-    font-size: 4.5em;
-    font-weight: 400;
-    margin-bottom: 0.5em; }
+  height: 300px;
+  padding-top: 2em; }
+  @media screen and (min-width: 40em) {
+    .hero {
+      height: 600px;
+      padding-top: 5em; } }
   .hero p {
     font-family: "Merriweather";
-    font-size: 1.25em;
+    font-size: 0.9em;
     line-height: 1.5em;
     margin: 0; }
-  .hero .content {
-    margin: 0 auto;
-    max-width: 50em;
+    @media screen and (min-width: 40em) {
+      .hero p {
+        font-size: 1.25em; } }
+  .hero .content h1,
+  .hero .content p {
     text-align: center; }
   .hero .description {
     margin: 0 auto;
     max-width: 40em; }
+
+.hero-header {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-size: 1em;
+  font-weight: 400; }
+  .hero-header .header-top {
+    font-size: 2.5em; }
+    @media screen and (min-width: 40em) {
+      .hero-header .header-top {
+        font-size: 4.5em; } }
+  .hero-header .who {
+    font-size: 1.75em;
+    margin-bottom: 0.5em; }
+    @media screen and (min-width: 40em) {
+      .hero-header .who {
+        font-size: 3.5em; } }
+    @media screen and (min-width: 53.75em) {
+      .hero-header .who {
+        font-size: 4.5em; } }
 
 .js .no-js-hide {
   display: none; }
@@ -226,16 +267,20 @@ figure {
     opacity: 1;
     visibility: visible; }
 
-.state-modal {
-  bottom: auto;
-  height: 320px;
-  margin: -160px 0 0 -320px;
-  top: 50%; }
+@media screen and (min-width: 40em) {
+  .state-modal {
+    height: 320px;
+    margin: -160px 0 0 -320px;
+    top: 50%; } }
 
 .state-select {
-  margin: 1em auto 0;
+  margin: 0.25em auto 0;
   max-width: 30em; }
+  @media screen and (min-width: 40em) {
+    .state-select {
+      margin-top: 1em; } }
   .state-select label {
+    font-size: 0.25em;
     visibility: hidden; }
 
 .who {
@@ -267,16 +312,16 @@ figure {
     font-size: 1.1em;
     font-weight: 400;
     line-height: 1.5em; }
-  .video .col {
-    float: left;
-    display: block;
-    margin-right: 4.82916%;
-    width: 47.58542%; }
-    .video .col:last-child {
-      margin-right: 0; }
-  .video .content-container {
-    margin: 0 auto;
-    max-width: 900px; }
+  @media screen and (min-width: 40em) {
+    .video .col {
+      float: left;
+      display: block;
+      margin-right: 4.82916%;
+      width: 47.58542%; }
+      .video .col:last-child {
+        margin-right: 0; } }
+  .video .video-col {
+    margin-bottom: 2em; }
 
 .video-container {
   height: 0;

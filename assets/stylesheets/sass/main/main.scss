@@ -2,7 +2,6 @@
 @import "neat/neat";
 @import "components/all";
 
-
 body {
   font-size: 100%;
   line-height: 1;
@@ -65,13 +64,20 @@ figure {
   }
 
   .usa-logo {
-    float: right;
+    margin-top: 2em;
     width: 150px;
+
+    @include media($medium-screen) {
+      float: right;
+      margin-top: 0;
+    }
   }
 }
 
 .footer-col {
-  @include span-columns(3 of 6);
+  @include media($medium-screen) {
+    @include span-columns(3 of 6);
+  }
 
   img {
     width: 100%;
@@ -83,32 +89,64 @@ figure {
   background-repeat: no-repeat;
   background-size: cover;
   color: $white;
-  height: 600px;
-  padding-top: 4em;
+  height: 300px;
+  padding-top: 2em;
 
-  h1 {
-    @include transition(all 0.2s ease);
-    font-size: 4.5em;
-    font-weight: 400;
-    margin-bottom: 0.5em;
+  @include media($medium-screen) {
+    height: 600px;
+    padding-top: 5em;
   }
 
   p {
     font-family: $header-font-family;
-    font-size: 1.25em;
+    font-size: 0.9em;
     line-height: 1.5em;
     margin: 0;
+
+    @include media($medium-screen) {
+      font-size: 1.25em;
+    }
   }
 
   .content {
-    margin: 0 auto;
-    max-width: 50em;
-    text-align: center;
+    @extend %container;
+
+    h1,
+    p {
+      text-align: center;
+    }
   }
 
   .description {
     margin: 0 auto;
     max-width: 40em;
+  }
+}
+
+.hero-header {
+  @include transition(all 0.2s ease);
+  font-size: 1em;
+  font-weight: 400;
+
+  .header-top {
+    font-size: 2.5em;
+
+    @include media($medium-screen) {
+      font-size: 4.5em;
+    }
+  }
+
+  .who {
+    font-size: 1.75em;
+    margin-bottom: 0.5em;
+
+    @include media($medium-screen) {
+      font-size: 3.5em;
+    }
+
+    @include media($large-screen) {
+      font-size: 4.5em;
+    }
   }
 }
 
@@ -148,17 +186,24 @@ figure {
 }
 
 .state-modal {
-  bottom: auto;
-  height: 320px;
-  margin: -160px 0 0 -320px;
-  top: 50%;
+
+  @include media($medium-screen) {
+    height: 320px;
+    margin: -160px 0 0 -320px;
+    top: 50%;
+  }
 }
 
 .state-select {
-  margin: 1em auto 0;
+  margin: 0.25em auto 0;
   max-width: 30em;
 
+  @include media($medium-screen) {
+    margin-top: 1em;
+  }
+
   label {
+    font-size: 0.25em;
     visibility: hidden;
   }
 
@@ -206,12 +251,17 @@ figure {
   }
 
   .col {
-    @include span-columns(3 of 6);
+    @include  media($medium-screen) {
+      @include span-columns(3 of 6);
+    }
   }
 
   .content-container {
-    margin: 0 auto;
-    max-width: 900px;
+    @extend %container;
+  }
+
+  .video-col {
+    margin-bottom: 2em;
   }
 }
 
