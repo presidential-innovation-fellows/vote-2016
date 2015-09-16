@@ -68,18 +68,18 @@ figure {
     width: auto;
   }
 
-  .usa-logo {
-    margin-top: 2em;
-    width: 150px;
+  .pif-logo {
+    width: 90px;
+  }
 
-    @include media($medium-screen) {
-      float: right;
-      margin-top: 0;
-    }
+  .usa-logo {
+    width: 150px;
   }
 }
 
 .footer-col {
+  @include clearfix;
+
   @include media($medium-screen) {
     @include span-columns(3 of 6);
   }
@@ -90,6 +90,25 @@ figure {
 
   img {
     width: 100%;
+  }
+
+  .logo {
+    float: left;
+
+    @include media($medium-screen) {
+      float: right;
+    }
+  }
+
+  .logos {
+    @include clearfix;
+    margin-top: 2em;
+
+    @include media($medium-screen) {
+      float: right;
+      margin-top: 0;
+      width: 150px;
+    }
   }
 }
 
@@ -108,6 +127,7 @@ figure {
 
     &:hover {
       color: $white;
+      text-decoration: underline;
     }
   }
 
@@ -290,11 +310,6 @@ figure {
   }
 }
 
-.who {
-  display: block;
-  margin-left: 0.35em;
-}
-
 
 .usa {
   background-color: $dark-gray;
@@ -377,4 +392,46 @@ figure {
     top: 0;
     width: 100%;
   }
+}
+
+.website-links {
+  border-bottom: 1px solid $light-gray;
+  color: $white;
+  list-style: none;
+  margin-bottom: 1em;
+  padding: 0 0 1em;
+  text-transform: uppercase;
+
+  &:first-child {
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  a {
+    color: darken($white, 30);
+    text-decoration: none;
+    vertical-align: center;
+
+    &:hover {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+
+  li {
+    border-right: 1px solid $white;
+    display: inline-block;
+    font-size: 0.9em;
+    padding: 0 0.5em;
+
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+}
+
+.who {
+  display: block;
+  margin-left: 0.35em;
 }
