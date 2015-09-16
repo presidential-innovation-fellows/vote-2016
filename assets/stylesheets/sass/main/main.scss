@@ -123,8 +123,8 @@ figure {
   background-repeat: no-repeat;
   background-size: cover;
   color: $white;
-  height: 320px;
-  padding-top: 2em;
+  height: 400px;
+  padding-top: 3.5em;
 
   @include media($medium-screen) {
     height: 600px;
@@ -161,21 +161,28 @@ figure {
   @include transition(all 0.2s ease);
   font-size: 1em;
   font-weight: 400;
+  line-height:32px;
 
   .header-top {
-    font-size: 2.5em;
+    font-size: 2em;
 
     @include media($medium-screen) {
-      font-size: 4.5em;
+      font-size: 4em;
+      line-height:105px;
+    }
+
+    @include media($large-screen) {
+      font-size:4.5em;
+      line-height:120px;
     }
   }
 
   .who {
-    font-size: 1.75em;
+    font-size: 2em;
     margin-bottom: 0.5em;
 
     @include media($medium-screen) {
-      font-size: 3.5em;
+      font-size: 4em;
     }
 
     @include media($large-screen) {
@@ -333,6 +340,26 @@ figure {
 
   .video-col {
     margin-bottom: 2em;
+  }
+
+  .video-content {
+    h1{
+      font-size: 1.3em;
+    }
+    p{
+      font-size:1em;
+      line-height:1.4em;
+    }
+
+    @include media($medium-screen) {
+      h1{
+        font-size: 2em;
+      }
+      p{
+        font-size:1.1em;
+        line-height:1.5em;
+      }
+    }
   }
 }
 
