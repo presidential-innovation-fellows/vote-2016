@@ -182,14 +182,15 @@ figure {
     overflow: hidden;
     padding-left: 1em;
     width: auto; }
+  .footer .pif-logo {
+    width: 90px; }
   .footer .usa-logo {
-    margin-top: 2em;
     width: 150px; }
-    @media screen and (min-width: 40em) {
-      .footer .usa-logo {
-        float: right;
-        margin-top: 0; } }
 
+.footer-col::after {
+  clear: both;
+  content: "";
+  display: table; }
 @media screen and (min-width: 40em) {
   .footer-col {
     float: left;
@@ -202,6 +203,22 @@ figure {
   display: block; }
 .footer-col img {
   width: 100%; }
+.footer-col .logo {
+  float: left; }
+  @media screen and (min-width: 40em) {
+    .footer-col .logo {
+      float: right; } }
+.footer-col .logos {
+  margin-top: 2em; }
+  .footer-col .logos::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (min-width: 40em) {
+    .footer-col .logos {
+      float: right;
+      margin-top: 0;
+      width: 150px; } }
 
 .footer-links {
   list-style: none;
@@ -214,7 +231,8 @@ figure {
     color: #b3b3b3;
     text-decoration: none; }
     .footer-links a:hover {
-      color: #ffffff; }
+      color: #ffffff;
+      text-decoration: underline; }
   .footer-links li {
     display: inline-block;
     font-size: 0.85em;
@@ -337,10 +355,6 @@ figure {
     font-size: 0.25em;
     visibility: hidden; }
 
-.who {
-  display: block;
-  margin-left: 0.35em; }
-
 .usa {
   background-color: #323a45;
   color: #ffffff;
@@ -400,5 +414,35 @@ figure {
     position: absolute;
     top: 0;
     width: 100%; }
+
+.website-links {
+  border-bottom: 1px solid #aeb0b5;
+  color: #ffffff;
+  list-style: none;
+  margin-bottom: 1em;
+  padding: 0 0 1em;
+  text-transform: uppercase; }
+  .website-links:first-child {
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0; }
+  .website-links a {
+    color: #b3b3b3;
+    text-decoration: none;
+    vertical-align: center; }
+    .website-links a:hover {
+      color: #ffffff;
+      text-decoration: underline; }
+  .website-links li {
+    border-right: 1px solid #ffffff;
+    display: inline-block;
+    font-size: 0.9em;
+    padding: 0 0.5em; }
+    .website-links li:first-child {
+      padding-left: 0; }
+
+.who {
+  display: block;
+  margin-left: 0.35em; }
 
 /*# sourceMappingURL=main.css.map */
