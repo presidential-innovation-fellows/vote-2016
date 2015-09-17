@@ -62,6 +62,13 @@
     <link rel="icon" type="image/png" href="assets/images/favicons/favicon.png">
     <script src="assets/js/jquery-1.11.3.min.js"></script>
     <script src="assets/js/modernizr.js"></script>
+    <!-- Scripts -->
+      <!--[if lte IE 8]>
+        <script src="assets/js/respond.min.js"></script>
+      <![endif]-->
+      <!--[if lte IE 9]>
+        <script src="assets/js/html5shiv.js"></script>
+      <![endif]-->
   </head>
   <body>
     <div id="wrapper">
@@ -142,12 +149,12 @@
             <ul>
               <li>
                 <a href="https://twitter.com/home?status=Join%20millions%20of%20other%20Americans%20who%20are%20registered%20to%20vote%20-%20%20https%3A//vote.usa.gov/" target="blank">
-                  <img alt="Twitter Button" src="assets/images/twitter.svg">
+                  <div class="twitter"></div>
                 </a>
               </li>
               <li>
                 <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//vote.usa.gov/" target="_blank">
-                  <img alt="Facebook Button" src="assets/images/facebook.svg">
+                  <div class="facebook"></div>
                 </a>
               </li>
             </ul>
@@ -173,6 +180,7 @@
           </div>
         </div>
       </section>
+
       <section class="footer">
         <div class="container">
           <div class="row">
@@ -207,7 +215,7 @@
                 </p>
               </div>
             </div>
-            <div class="footer-col">
+            <div class="footer-col right">
               <div class="logos">
                 <figure class="pif-logo logo">
                   <a href="https://presidentialinnovationfellows.gov" target="blank">
@@ -253,8 +261,6 @@
 
     <div class="overlay">
     </div>
-    <!-- Scripts -->
-    <!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
     <script src="assets/js/heroAnimation.js"></script>
     <script src="assets/js/stateSelect.js"></script>
 

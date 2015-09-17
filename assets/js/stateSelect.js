@@ -1,5 +1,12 @@
 var vote2016 = vote2016 || {};
 
+var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+
+ if (isSafari) {
+  $("html").addClass("safari");
+}
+
+
 var stateWebsites = [
   { "state": "AZ", "website": "https://servicearizona.com/webapp/evoter/" },
   { "state": "CA", "website": "http://registertovote.ca.gov/" },

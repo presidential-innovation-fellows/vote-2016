@@ -82,6 +82,10 @@ figure {
 
   @include media($medium-screen) {
     @include span-columns(3 of 6);
+
+    &.right {
+      width: 42%;
+    }
   }
 
   a {
@@ -230,6 +234,35 @@ figure {
   }
 }
 
+.no-cssgradients {
+
+  .hero {
+    background-image: url("../../../images/new-hero-ie.jpg");
+  }
+}
+
+.no-svg {
+
+  .social-buttons {
+
+    div {
+
+      @include media($medium-screen) {
+        height: 38px;
+        width: 38px;
+      }
+
+      &.facebook {
+        background-image: url("../../../images/facebook.png");
+      }
+
+      &.twitter {
+        background-image: url("../../../images/twitter.png");
+      }
+    }
+  }
+}
+
 .overlay {
   background-color: rgba($dark-gray, 0.2);
   bottom: 0;
@@ -246,6 +279,14 @@ figure {
   }
 }
 
+.safari {
+
+  .hero {
+    background-image: url("../../../images/new-hero-ie.jpg");
+  }
+}
+
+
 .social-buttons {
   margin-top: 1.5em;
   text-align: center;
@@ -259,17 +300,30 @@ figure {
     font-size: 1.3em;
   }
 
+  div {
+    height: 30px;
+    width: 30px;
+
+    @include media($medium-screen) {
+      height: 38px;
+      width: 38px;
+    }
+
+    &.facebook {
+      background-image: url("../../../images/facebook.svg");
+    }
+
+    &.twitter {
+      background-image: url("../../../images/twitter.svg");
+    }
+  }
+
   img {
     width: 100%;
   }
 
   li {
     display: inline-block;
-    width: 30px;
-
-    @include media($medium-screen) {
-      width: 38px;
-    }
 
     &:first-child {
       margin-right: 1em;
@@ -329,7 +383,6 @@ figure {
 }
 
 .video {
-  @include clearfix;
   padding: 4em 0;
 
   h1 {
@@ -346,11 +399,16 @@ figure {
   .col {
     @include  media($medium-screen) {
       @include span-columns(3 of 6);
+
+      &.video-col {
+        width: 42%;
+      }
     }
   }
 
   .content-container {
     @extend %container;
+    @include clearfix;
   }
 
   .video-col {
