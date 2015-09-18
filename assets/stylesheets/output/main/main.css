@@ -65,7 +65,7 @@ h6 {
   z-index: 1000; }
   @media screen and (min-width: 40em) {
     .modal {
-      bottom: 2em;
+      height: 550px;
       left: 50%;
       margin-left: -320px;
       padding: 2.25em 2em 1.5em;
@@ -87,8 +87,7 @@ h6 {
   .modal .action {
     text-align: center; }
   .modal .button {
-    font-size: 1.1em;
-    margin-top: 1.25em; }
+    font-size: 1.1em; }
   .modal .close {
     color: #323a45;
     cursor: pointer;
@@ -292,36 +291,53 @@ figure {
       .hero-header .who {
         font-size: 4.5em; } }
 
-.intro-slide h2 {
-  font-size: 2em;
-  margin: 0.5em 0 1em; }
-.intro-slide h3 {
-  font-size: 1.25em;
-  margin: 0;
-  padding-top: 1em; }
-.intro-slide ul {
-  list-style: none; }
-.intro-slide .content {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 74.41059%; }
-  .intro-slide .content:last-child {
-    margin-right: 0; }
-.intro-slide .image {
-  float: left;
-  height: 100px;
-  width: 100px; }
-  .intro-slide .image img {
-    width: 78%; }
-.intro-slide .step {
-  border-top: 1px solid #aeb0b5; }
+.intro-slide {
+  height: 100%; }
+  .intro-slide h2 {
+    font-size: 2em;
+    margin: 0.25em 0 1em; }
+  .intro-slide h3 {
+    font-size: 1.15em;
+    margin: 0 0 0.25em;
+    padding-top: 0.5em; }
+  .intro-slide p {
+    margin-top: 0; }
+  .intro-slide ul {
+    margin-bottom: 0.25em;
+    list-style: none;
+    padding-left: 0; }
+  .intro-slide .content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%; }
+    .intro-slide .content:last-child {
+      margin-right: 0; }
+  .intro-slide .disclaimer {
+    color: #93969d;
+    font-size: 0.85em;
+    margin-top: 0.5em; }
+  .intro-slide .image {
+    float: left;
+    height: 90px;
+    width: 90px; }
+    .intro-slide .image img {
+      width: 78%; }
+  .intro-slide .other-options {
+    margin-top: 1.5em;
+    text-align: center; }
+    .intro-slide .other-options a {
+      color: #0071bc; }
   .intro-slide .step:after {
     clear: both;
     content: "";
     display: table; }
   .intro-slide .step:first-child {
     border-top: 0; }
+  @media screen and (min-width: 40em) {
+    .intro-slide .steps {
+      margin: 0 auto;
+      width: 90%; } }
 
 .js .no-js-hide {
   display: none; }

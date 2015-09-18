@@ -14,7 +14,7 @@
   z-index: 1000;
 
   @include media($medium-screen) {
-    bottom: 2em;
+    height: 550px;
     left: 50%;
     margin-left: -320px;
     padding: 2.25em 2em 1.5em;
@@ -43,7 +43,6 @@
 
   .button {
     font-size: 1.1em;
-    margin-top: 1.25em;
   }
 
   .close {

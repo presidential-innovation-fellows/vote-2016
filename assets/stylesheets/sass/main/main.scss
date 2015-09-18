@@ -216,42 +216,70 @@ figure {
 }
 
 .intro-slide {
+  height: 100%;
 
   h2 {
     font-size: 2em;
-    margin: 0.5em 0 1em;
+    margin: 0.25em 0 1em;
   }
 
   h3 {
-    font-size: 1.25em;
-    margin: 0;
-    padding-top: 1em;
+    font-size: 1.15em;
+    margin: 0 0 0.25em;
+    padding-top: 0.5em;
+  }
+
+  p {
+    margin-top: 0;
   }
 
   ul {
+    margin-bottom: 0.25em;
     list-style: none;
+    padding-left: 0;
   }
 
   .content {
     @include span-columns(9);
   }
 
+  .disclaimer {
+    color: darken($light-gray, 10);
+    font-size: 0.85em;
+    margin-top: 0.5em;
+  }
+
   .image {
     float: left;
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
 
     img {
       width: 78%;
     }
   }
 
+  .other-options {
+    margin-top: 1.5em;
+    text-align: center;
+
+    a {
+      color: $brand-blue;
+    }
+  }
+
   .step {
     @include clearfix;
-    border-top: 1px solid $light-gray;
 
     &:first-child {
       border-top: 0;
+    }
+  }
+
+  .steps {
+    @include media($medium-screen) {
+      margin: 0 auto;
+      width: 90%;
     }
   }
 }
