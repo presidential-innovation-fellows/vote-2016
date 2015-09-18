@@ -166,6 +166,10 @@ figure {
 .footer {
   background: #323a45;
   padding: 3.5em 0 4.5em; }
+  .footer .disclaimer {
+    color: #aeb0b5;
+    font-size: 0.8em;
+    text-align: right; }
   .footer .gsa-logo {
     float: left;
     width: 75px; }
@@ -181,9 +185,9 @@ figure {
     padding-left: 1em;
     width: auto; }
   .footer .pif-logo {
-    width: 90px; }
+    width: 70px; }
   .footer .usa-logo {
-    width: 150px; }
+    width: 130px; }
 
 .footer-col:after {
   clear: both;
@@ -198,6 +202,7 @@ figure {
     .footer-col:last-child {
       margin-right: 0; }
     .footer-col.right {
+      float: right;
       width: 42%; } }
 .footer-col a {
   display: block; }
@@ -205,20 +210,12 @@ figure {
   width: 100%; }
 .footer-col .logo {
   float: left; }
-  @media screen and (min-width: 40em) {
-    .footer-col .logo {
-      float: right; } }
 .footer-col .logos {
   margin-top: 2em; }
   .footer-col .logos:after {
     clear: both;
     content: "";
     display: table; }
-  @media screen and (min-width: 40em) {
-    .footer-col .logos {
-      float: right;
-      margin-top: 0;
-      width: 150px; } }
 
 .footer-links {
   list-style: none;
@@ -315,7 +312,7 @@ figure {
       margin-right: 0; }
   .intro-slide .disclaimer {
     color: #93969d;
-    font-size: 0.85em;
+    font-size: 0.7em;
     margin-top: 0.5em; }
   .intro-slide .image {
     float: left;
@@ -324,7 +321,8 @@ figure {
     .intro-slide .image img {
       width: 78%; }
   .intro-slide .other-options {
-    margin-top: 1.5em;
+    font-size: 0.9em;
+    margin-top: 0.75em;
     text-align: center; }
     .intro-slide .other-options a {
       color: #0071bc; }

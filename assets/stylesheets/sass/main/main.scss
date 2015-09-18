@@ -50,6 +50,12 @@ figure {
     @extend %container;
   }
 
+  .disclaimer {
+    color: $light-gray;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
   .gsa-logo {
     float: left;
     width: 75px;
@@ -69,11 +75,11 @@ figure {
   }
 
   .pif-logo {
-    width: 90px;
+    width: 70px;
   }
 
   .usa-logo {
-    width: 150px;
+    width: 130px;
   }
 }
 
@@ -84,6 +90,7 @@ figure {
     @include span-columns(3 of 6);
 
     &.right {
+      float: right;
       width: 42%;
     }
   }
@@ -98,21 +105,11 @@ figure {
 
   .logo {
     float: left;
-
-    @include media($medium-screen) {
-      float: right;
-    }
   }
 
   .logos {
     @include clearfix;
     margin-top: 2em;
-
-    @include media($medium-screen) {
-      float: right;
-      margin-top: 0;
-      width: 150px;
-    }
   }
 }
 
@@ -245,7 +242,7 @@ figure {
 
   .disclaimer {
     color: darken($light-gray, 10);
-    font-size: 0.85em;
+    font-size: 0.7em;
     margin-top: 0.5em;
   }
 
@@ -260,7 +257,8 @@ figure {
   }
 
   .other-options {
-    margin-top: 1.5em;
+    font-size: 0.9em;
+    margin-top: 0.75em;
     text-align: center;
 
     a {
