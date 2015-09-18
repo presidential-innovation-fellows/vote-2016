@@ -35,13 +35,6 @@ var stateWebsites = [
 
 vote2016.website = {
 
-  bindActionClick: function() {
-    $(".action a").on("click", function(e){
-      e.preventDefault();
-      $(".slide-container").addClass("right");
-    });
-  },
-
   bindModalClose: function() {
     $(".close").bind("click", function(e){
       e.preventDefault();
@@ -51,7 +44,6 @@ vote2016.website = {
   },
 
   bindFunctions: function() {
-    vote2016.website.bindActionClick();
     vote2016.website.bindModalClose();
     vote2016.website.bindSocialButtons();
     vote2016.website.bindStateSelect();
