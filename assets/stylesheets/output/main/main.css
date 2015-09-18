@@ -254,6 +254,15 @@ figure {
     @media screen and (min-width: 40em) {
       .hero p {
         font-size: 1.25em; } }
+  .hero .actions {
+    font-family: "Merriweather";
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin-top: 1em;
+    text-align: center; }
+    .hero .actions a {
+      color: #ffffff;
+      font-weight: bold; }
   .hero .content h1,
   .hero .content p {
     text-align: center; }
@@ -350,6 +359,11 @@ figure {
 
 .no-cssgradients .hero {
   background-image: url("../../../images/new-hero-ie.jpg"); }
+
+.no-js .modal {
+  display: none; }
+.no-js .state-select {
+  display: none; }
 
 @media screen and (min-width: 40em) {
   .no-svg .social-buttons div {

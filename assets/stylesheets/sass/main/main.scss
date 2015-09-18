@@ -163,6 +163,19 @@ figure {
     }
   }
 
+  .actions {
+    font-family: $header-font-family;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin-top: 1em;
+    text-align: center;
+
+    a {
+      color: $white;
+      font-weight: bold;
+    }
+  }
+
   .content {
     @extend %container;
 
@@ -305,6 +318,17 @@ figure {
 
   .hero {
     background-image: url("../../../images/new-hero-ie.jpg");
+  }
+}
+
+.no-js {
+
+  .modal {
+    display: none;
+  }
+
+  .state-select {
+    display: none;
   }
 }
 
