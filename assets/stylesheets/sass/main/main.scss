@@ -652,6 +652,9 @@ figure {
     display: inline-block;
     font-size: 0.9em;
     padding: 0 0.5em;
+    &:first-child{
+      padding-left:0px;
+    }
     &:last-child{
       border-right:none;
     }

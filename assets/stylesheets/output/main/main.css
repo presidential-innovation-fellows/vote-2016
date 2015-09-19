@@ -583,6 +583,8 @@ figure {
     display: inline-block;
     font-size: 0.9em;
     padding: 0 0.5em; }
+    .website-links li:first-child {
+      padding-left: 0px; }
     .website-links li:last-child {
       border-right: none; }
 
