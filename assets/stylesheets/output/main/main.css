@@ -169,10 +169,22 @@ figure {
   .footer .disclaimer {
     color: #aeb0b5;
     font-size: 0.8em;
-    text-align: right; }
+    margin-top: 15px; }
+    .footer .disclaimer p {
+      margin-top: 0px;
+      line-height: 1.1em; }
+    @media screen and (min-width: 53.75em) {
+      .footer .disclaimer {
+        margin-top: 0px;
+        text-align: right; } }
   .footer .gsa-logo {
     float: left;
-    width: 75px; }
+    width: 75px;
+    margin-top: 10px; }
+    @media screen and (min-width: 53.75em) {
+      .footer .gsa-logo {
+        margin-left: 10px;
+        margin-top: 0px; } }
   .footer .row:after {
     clear: both;
     content: "";
@@ -180,30 +192,57 @@ figure {
   .footer .site-description {
     color: #ffffff;
     font-size: 0.8em;
-    line-height: 1.2em;
+    line-height: 1.1em;
     overflow: hidden;
     padding-left: 1em;
     width: auto; }
+    .footer .site-description p {
+      margin-top: 10px; }
+      @media screen and (min-width: 53.75em) {
+        .footer .site-description p {
+          margin-top: 0px; } }
   .footer .pif-logo {
     width: 70px; }
   .footer .usa-logo {
-    width: 130px; }
+    width: 130px;
+    margin-left: 5px;
+    margin-top: 10px; }
+    @media screen and (min-width: 53.75em) {
+      .footer .usa-logo {
+        margin-left: 3%; } }
 
 .footer-col:after {
   clear: both;
   content: "";
   display: table; }
-@media screen and (min-width: 40em) {
-  .footer-col {
+@media screen and (min-width: 53.75em) {
+  .footer-col.left {
     float: left;
     display: block;
-    margin-right: 4.82916%;
-    width: 47.58542%; }
-    .footer-col:last-child {
-      margin-right: 0; }
-    .footer-col.right {
-      float: right;
-      width: 42%; } }
+    margin-right: 3.16844%;
+    width: 19.75788%;
+    width: 26.75%;
+    margin-right: 0px; }
+    .footer-col.left:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 53.75em) {
+  .footer-col.middle {
+    float: left;
+    display: block;
+    margin-right: 3.16844%;
+    width: 31.22104%; }
+    .footer-col.middle:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 53.75em) {
+  .footer-col.right {
+    float: left;
+    display: block;
+    margin-right: 3.16844%;
+    width: 42.6842%;
+    float: right;
+    width: 38%; }
+    .footer-col.right:last-child {
+      margin-right: 0; } }
 .footer-col a {
   display: block; }
 .footer-col img {
@@ -449,6 +488,7 @@ figure {
     height: 320px;
     margin: -160px 0 0 -320px;
     top: 50%; } }
+.state-modal p {
   text-align: center; }
 
 .state-select {
@@ -531,10 +571,6 @@ figure {
   margin-bottom: 1em;
   padding: 0 0 1em;
   text-transform: uppercase; }
-  .website-links:first-child {
-    border: none;
-    margin-bottom: 0;
-    padding-bottom: 0; }
   .website-links a {
     color: #b3b3b3;
     text-decoration: none;
@@ -547,8 +583,8 @@ figure {
     display: inline-block;
     font-size: 0.9em;
     padding: 0 0.5em; }
-    .website-links li:first-child {
-      padding-left: 0; }
+    .website-links li:last-child {
+      border-right: none; }
 
 .who {
   display: block;

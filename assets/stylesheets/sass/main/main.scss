@@ -53,13 +53,31 @@ figure {
   .disclaimer {
     color: $light-gray;
     font-size: 0.8em;
-    text-align: right;
+    // text-align: right;
+    margin-top:15px;
+    p{
+      margin-top:0px;
+      line-height:1.1em;
+    }
+    @include media($large-screen) {
+      margin-top:0px;
+      text-align:right;
+    }
   }
+
+  
 
   .gsa-logo {
     float: left;
     width: 75px;
+    margin-top:10px;
+
+    @include media($large-screen) {
+      margin-left:10px;
+      margin-top:0px;
+    }
   }
+
 
   .row {
     @include clearfix;
@@ -68,10 +86,17 @@ figure {
   .site-description {
     color: $white;
     font-size: 0.8em;
-    line-height: 1.2em;
+    line-height: 1.1em;
     overflow: hidden;
     padding-left: 1em;
     width: auto;
+    p{
+      margin-top:10px;
+
+      @include media($large-screen){ 
+        margin-top:0px;
+      }
+    }
   }
 
   .pif-logo {
@@ -80,18 +105,38 @@ figure {
 
   .usa-logo {
     width: 130px;
+    margin-left:5px;
+    margin-top:10px;
+
+    @include media($large-screen) {
+      margin-left:3%;
+    }
   }
+
 }
 
 .footer-col {
   @include clearfix;
 
-  @include media($medium-screen) {
-    @include span-columns(3 of 6);
+  &.left{
+    @include media($large-screen) {
+      @include span-columns(2 of 9);
+      width:26.75%;
+      margin-right:0px;
+    }
+  }
+  
+  &.middle{
+    @include media($large-screen) {
+      @include span-columns(3 of 9);
+    }
+  }
 
-    &.right {
-      float: right;
-      width: 42%;
+  &.right{
+    @include media($large-screen) {
+      @include span-columns(4 of 9);
+      float:right;
+      width:38%;
     }
   }
 
@@ -591,12 +636,6 @@ figure {
   padding: 0 0 1em;
   text-transform: uppercase;
 
-  &:first-child {
-    border: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-
   a {
     color: darken($white, 30);
     text-decoration: none;
@@ -613,10 +652,10 @@ figure {
     display: inline-block;
     font-size: 0.9em;
     padding: 0 0.5em;
-
-    &:first-child {
-      padding-left: 0;
+    &:last-child{
+      border-right:none;
     }
+
   }
 }
 
