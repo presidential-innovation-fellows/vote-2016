@@ -570,6 +570,10 @@ figure {
   .col {
     @include media($medium-screen) {
       @include span-columns(3 of 6);
+    }
+
+    @include media($large-screen) {
+      @include span-columns(3 of 6);
 
       &.video-col {
         width: 42%;
@@ -590,20 +594,15 @@ figure {
 
     h1 {
       font-size: 1.3em;
+      @include media($large-screen) {
+        font-size:2em;
+      }
     }
 
     p {
       font-size:1em;
       line-height:1.4em;
-    }
-
-    @include media($medium-screen) {
-
-      h1 {
-        font-size: 2em;
-      }
-
-      p {
+      @include media($large-screen) {
         font-size:1.1em;
         line-height:1.5em;
       }

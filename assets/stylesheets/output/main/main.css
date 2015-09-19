@@ -529,6 +529,14 @@ figure {
       margin-right: 4.82916%;
       width: 47.58542%; }
       .video .col:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 53.75em) {
+    .video .col {
+      float: left;
+      display: block;
+      margin-right: 4.82916%;
+      width: 47.58542%; }
+      .video .col:last-child {
         margin-right: 0; }
       .video .col.video-col {
         width: 42%; } }
@@ -540,15 +548,16 @@ figure {
     margin-bottom: 2em; }
   .video .video-content h1 {
     font-size: 1.3em; }
+    @media screen and (min-width: 53.75em) {
+      .video .video-content h1 {
+        font-size: 2em; } }
   .video .video-content p {
     font-size: 1em;
     line-height: 1.4em; }
-  @media screen and (min-width: 40em) {
-    .video .video-content h1 {
-      font-size: 2em; }
-    .video .video-content p {
-      font-size: 1.1em;
-      line-height: 1.5em; } }
+    @media screen and (min-width: 53.75em) {
+      .video .video-content p {
+        font-size: 1.1em;
+        line-height: 1.5em; } }
 
 .video-container {
   height: 0;
