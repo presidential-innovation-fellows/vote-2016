@@ -447,8 +447,12 @@ figure {
         width: 38px; } }
     .social-buttons div.facebook {
       background-image: url("../../../images/facebook.svg"); }
+      .social-buttons div.facebook:hover {
+        opacity: 0.8; }
     .social-buttons div.twitter {
       background-image: url("../../../images/twitter.svg"); }
+      .social-buttons div.twitter:hover {
+        opacity: 0.8; }
   .social-buttons img {
     width: 100%; }
   .social-buttons li {

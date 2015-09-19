@@ -447,10 +447,16 @@ figure {
 
     &.facebook {
       background-image: url("../../../images/facebook.svg");
+      &:hover{
+        opacity:0.8;
+      }
     }
 
     &.twitter {
       background-image: url("../../../images/twitter.svg");
+      &:hover{
+        opacity:0.8;
+      }
     }
   }
 
