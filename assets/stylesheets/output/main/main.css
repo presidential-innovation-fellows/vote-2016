@@ -449,6 +449,7 @@ figure {
     height: 320px;
     margin: -160px 0 0 -320px;
     top: 50%; } }
+  text-align: center; }
 
 .state-select {
   margin: 0.25em auto 0;
