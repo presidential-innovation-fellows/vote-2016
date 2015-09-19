@@ -648,17 +648,21 @@ figure {
   }
 
   li {
-    border-right: 1px solid $white;
-    display: inline-block;
     font-size: 0.9em;
-    padding: 0 0.5em;
-    &:first-child{
-      padding-left:0px;
-    }
+    text-align:center;
+    line-height:21px;
     &:last-child{
       border-right:none;
     }
 
+    @include media($large-screen){
+      display:inline-block;
+      border-right: 1px solid $white;
+      padding: 0 0.5em;
+      &:first-child{
+        padding-left:0px;
+      }
+    }
   }
 }
 

@@ -579,14 +579,18 @@ figure {
       color: #ffffff;
       text-decoration: underline; }
   .website-links li {
-    border-right: 1px solid #ffffff;
-    display: inline-block;
     font-size: 0.9em;
-    padding: 0 0.5em; }
-    .website-links li:first-child {
-      padding-left: 0px; }
+    text-align: center;
+    line-height: 21px; }
     .website-links li:last-child {
       border-right: none; }
+    @media screen and (min-width: 53.75em) {
+      .website-links li {
+        display: inline-block;
+        border-right: 1px solid #ffffff;
+        padding: 0 0.5em; }
+        .website-links li:first-child {
+          padding-left: 0px; } }
 
 .who {
   display: block;
