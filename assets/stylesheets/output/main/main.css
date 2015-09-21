@@ -65,12 +65,13 @@ h6 {
   z-index: 1000; }
   @media screen and (min-width: 40em) {
     .modal {
-      height: 562px;
+      height: 525px;
       left: 50%;
       margin-left: -285px;
       padding: 2.25em 2em 1.5em;
       top: 2em;
-      width: 570px; } }
+      width: 570px;
+      margin-top: 75px; } }
   @media screen and (min-width: 53.75em) {
     .modal {
       margin-left: -310px;
@@ -399,7 +400,7 @@ figure {
     width: 100%; }
 .pdf-modal .other-options {
   font-size: 0.9em;
-  margin-top: 0.75em;
+  margin-top: 0;
   text-align: center; }
   .pdf-modal .other-options a {
     color: #0071bc; }
