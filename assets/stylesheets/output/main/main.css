@@ -564,7 +564,8 @@ figure {
     font-size: 1.3em; }
     @media screen and (min-width: 53.75em) {
       .video .video-content h1 {
-        font-size: 2em; } }
+        font-size: 2em;
+        margin-top: 20px; } }
   .video .video-content p {
     font-size: 1em;
     line-height: 1.4em; }

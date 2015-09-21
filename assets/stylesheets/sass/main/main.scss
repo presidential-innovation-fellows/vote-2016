@@ -603,6 +603,7 @@ figure {
       font-size: 1.3em;
       @include media($large-screen) {
         font-size:2em;
+        margin-top:20px;
       }
     }
 
