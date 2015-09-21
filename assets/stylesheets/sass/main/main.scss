@@ -58,6 +58,7 @@ figure {
 
 .footer {
   background: $dark-gray;
+  margin-top: 4em;
   padding: 3.5em 0 4.5em;
 
   .container {
@@ -442,6 +443,39 @@ figure {
   }
 }
 
+.representation {
+  background-color: darken($brand-blue, 15);
+  padding: 2em 0;
+  text-align: center;
+
+  h1 {
+    color: $white;
+    margin-bottom: 0.5em;
+
+    .red {
+      color: lighten($brand-red, 5);
+    }
+  }
+
+  p {
+    color: $white;
+    font-size: 1.1em;
+    line-height: 1.4em;
+  }
+
+  .content-container {
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 0 1em;
+  }
+
+  .image {
+    margin: 0 auto;
+    min-width: 400px;
+    width: 60%;
+  }
+}
+
 .safari {
 
   .hero {
@@ -676,4 +710,28 @@ figure {
 .who {
   display: block;
   margin-left: 0.35em;
+}
+
+.why-voteusa {
+  padding: 3em 0;
+  text-align: center;
+
+  h1 {
+    color: $brand-blue;
+  }
+
+  h2 {
+    color: darken($light-gray, 10);
+    font-size: 1.25em;
+  }
+
+  p {
+    line-height: 1.2em;
+  }
+
+  .content-container {
+    @include clearfix;
+    margin: 0 auto;
+    width: 600px;
+  }
 }
