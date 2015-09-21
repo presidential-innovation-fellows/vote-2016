@@ -459,28 +459,6 @@ figure {
     opacity: 1;
     visibility: visible; }
 
-.representation {
-  background-color: #004370;
-  padding: 2em 0;
-  text-align: center; }
-  .representation h1 {
-    color: #ffffff;
-    margin-bottom: 0.5em; }
-    .representation h1 .red {
-      color: #e63350; }
-  .representation p {
-    color: #ffffff;
-    font-size: 1.1em;
-    line-height: 1.4em; }
-  .representation .content-container {
-    margin: 0 auto;
-    max-width: 700px;
-    padding: 0 1em; }
-  .representation .image {
-    margin: 0 auto;
-    min-width: 400px;
-    width: 60%; }
-
 .safari .hero {
   background-image: url("../../../images/new-hero-ie.jpg"); }
 
@@ -588,7 +566,7 @@ figure {
     @media screen and (min-width: 53.75em) {
       .video .video-content h1 {
         font-size: 2em;
-        margin-top: 20px; } }
+        margin-top: 5px; } }
   .video .video-content p {
     font-size: 1em;
     line-height: 1.4em; }
@@ -643,22 +621,68 @@ figure {
   display: block;
   margin-left: 0.35em; }
 
+.representation {
+  background-color: #004370;
+  padding: 2em 0 3em 0;
+  text-align: center; }
+  .representation h1 {
+    color: #ffffff;
+    margin-bottom: 0.5em;
+    font-size: 1.3em; }
+    .representation h1 .red {
+      color: #e63350; }
+  .representation p {
+    color: #ffffff;
+    font-size: 1.1em;
+    line-height: 1.3em; }
+  .representation .content-container {
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 0 1em; }
+  .representation .image {
+    margin: 0 auto;
+    width: 90%; }
+  @media screen and (min-width: 53.75em) {
+    .representation {
+      padding: 4em 0 5em 0; }
+      .representation h1 {
+        font-size: 2em; }
+      .representation h2 {
+        font-size: 1.25em;
+        line-height: 1.4em; }
+      .representation p {
+        line-height: 1.4em;
+        font-size: 1.1em; } }
+
 .why-voteusa {
   padding: 3em 0;
   text-align: center; }
   .why-voteusa h1 {
-    color: #0071bc; }
+    color: #0071bc;
+    font-size: 1.3em; }
   .why-voteusa h2 {
     color: #93969d;
-    font-size: 1.25em; }
+    font-size: 1.1em;
+    line-height: 1.3em; }
   .why-voteusa p {
-    line-height: 1.2em; }
+    line-height: 1.4em;
+    font-size: 1em; }
   .why-voteusa .content-container {
     margin: 0 auto;
-    width: 600px; }
+    max-width: 600px;
+    padding: 0 1em; }
     .why-voteusa .content-container:after {
       clear: both;
       content: "";
       display: table; }
+  @media screen and (min-width: 53.75em) {
+    .why-voteusa h1 {
+      font-size: 2em; }
+    .why-voteusa h2 {
+      font-size: 1.3em;
+      line-height: 1.4em; }
+    .why-voteusa p {
+      line-height: 1.5em;
+      font-size: 1.1em; } }
 
 /*# sourceMappingURL=main.css.map */
