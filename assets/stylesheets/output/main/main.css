@@ -183,19 +183,20 @@ figure {
 
 .footer {
   background: #323a45;
-  margin-top: 4em;
-  padding: 2.5em 0 3.5em; }
+  padding: 2.5em 0 0.5em; }
   .footer .disclaimer {
     color: #aeb0b5;
     font-size: 0.8em;
     margin-top: 15px; }
-    .footer .disclaimer p {
-      margin-top: 0px;
-      line-height: 1.1em; }
     @media screen and (min-width: 53.75em) {
       .footer .disclaimer {
         margin-top: 0px;
         text-align: right; } }
+    .footer .disclaimer a {
+      color: #ffffff; }
+    .footer .disclaimer p {
+      margin-top: 0px;
+      line-height: 1.1em; }
   .footer .gsa-logo {
     float: left;
     width: 75px;
@@ -229,6 +230,23 @@ figure {
     @media screen and (min-width: 53.75em) {
       .footer .usa-logo {
         margin-left: 3%; } }
+  .footer .built-by {
+    color: #aeb0b5;
+    font-size: 0.9em;
+    margin-top: 5em; }
+    .footer .built-by p {
+      text-align: center; }
+    .footer .built-by a {
+      text-decoration: none;
+      color: #b3b3b3; }
+      .footer .built-by a:hover {
+        color: #fff;
+        text-decoration: underline; }
+    .footer .built-by img {
+      max-height: 15px;
+      margin-bottom: -3px;
+      margin-left: 2px;
+      margin-right: 2px; }
 
 .footer-col:after {
   clear: both;
@@ -531,33 +549,9 @@ figure {
     padding: 0; }
 
 .actions {
-  padding: 4em 0;
+  background-color: #153a66;
+  padding: 2em 0;
   text-align: center; }
-  .actions .row {
-    margin-top: 35px;
-    margin-bottom: 25px; }
-  .actions h2 {
-    color: #0071bc;
-    margin: 0 0 0.25em;
-    font-size: 1.3em; }
-  .actions h3 {
-    color: #93969d;
-    font-size: 1.1em;
-    line-height: 1.3em; }
-  .actions p {
-    line-height: 1.4em;
-    font-size: 1em; }
-  .actions .button {
-    text-transform: uppercase;
-    background-color: #e42141; }
-    .actions .button:hover {
-      background-color: #ae1f22; }
-  .actions img {
-    max-height: 85px; }
-  .actions .content-container:after {
-    clear: both;
-    content: "";
-    display: table; }
   @media screen and (min-width: 40em) {
     .actions .col {
       float: left;
@@ -565,20 +559,43 @@ figure {
       margin-right: 3.16844%;
       width: 31.22104%; }
       .actions .col:last-child {
-        margin-right: 0; }
-    .actions .row {
-      margin-top: 45px;
-      margin-bottom: 25px; }
-    .actions h2 {
-      font-size: 2em; }
-    .actions h3 {
-      font-size: 1.3em;
-      line-height: 1.4em; }
-    .actions p {
-      font-size: 1.1em;
-      line-height: 1.4em; }
-    .actions img {
-      max-height: 150px; } }
+        margin-right: 0; } }
+  .actions .row {
+    margin-bottom: 25px; }
+    .actions .row:after {
+      clear: both;
+      content: "";
+      display: table; }
+  .actions h1 {
+    color: #23a7ff;
+    font-size: 1.5em;
+    margin: 0 0 0.25em; }
+    @media screen and (min-width: 40em) {
+      .actions h1 {
+        font-size: 2em; } }
+  .actions h3 {
+    color: #ffffff;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    margin-top: 0; }
+  .actions p {
+    line-height: 1.4em;
+    font-size: 1em; }
+  .actions .button {
+    background-color: #e42141;
+    padding: 1.1em 1.4em;
+    text-transform: uppercase; }
+    .actions .button:hover {
+      background-color: #ae1f22; }
+  .actions img {
+    max-height: 120px; }
+    @media screen and (min-width: 40em) {
+      .actions img {
+        max-height: 150px; } }
+  .actions .content-container:after {
+    clear: both;
+    content: "";
+    display: table; }
 
 .website-links {
   border-bottom: 1px solid #aeb0b5;
@@ -613,19 +630,30 @@ figure {
   margin-left: 0.35em; }
 
 .representation {
-  background-color: #004370;
   padding: 2em 0 3em 0;
   text-align: center; }
-  .representation h2 {
-    color: #ffffff;
+  .representation h1 {
+    color: #0071bc;
     margin-bottom: 0.5em;
-    font-size: 1.3em; }
-    .representation h2 .red {
-      color: #e63350; }
+    font-size: 1.4em; }
+    @media screen and (min-width: 40em) {
+      .representation h1 {
+        font-size: 2em; } }
+    .representation h1 sup {
+      font-size: 0.5em; }
+      .representation h1 sup a {
+        color: #aeb0b5; }
+    .representation h1 .stat {
+      color: #e63350;
+      display: block;
+      font-size: 2.25em;
+      margin-bottom: 0.25em; }
   .representation p {
-    color: #ffffff;
-    font-size: 1.1em;
+    font-size: 1em;
     line-height: 1.3em; }
+    @media screen and (min-width: 40em) {
+      .representation p {
+        font-size: 1.1em; } }
   .representation .content-container {
     margin: 0 auto;
     max-width: 700px;
@@ -649,8 +677,11 @@ figure {
         font-size: 1.1em; } }
 
 .why-voteusa {
-  padding: 3em 0;
+  padding: 3em 0 4em;
   text-align: center; }
+  @media screen and (min-width: 40em) {
+    .why-voteusa {
+      padding: 5em 0 6em; } }
   .why-voteusa h2 {
     color: #0071bc;
     font-size: 1.3em; }
@@ -663,7 +694,7 @@ figure {
     font-size: 1em; }
   .why-voteusa .content-container {
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 700px;
     padding: 0 1em; }
     .why-voteusa .content-container:after {
       clear: both;
