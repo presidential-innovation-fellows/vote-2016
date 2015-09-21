@@ -68,7 +68,6 @@ figure {
   .disclaimer {
     color: $light-gray;
     font-size: 0.8em;
-    // text-align: right;
     margin-top:15px;
     p{
       margin-top:0px;
@@ -146,6 +145,8 @@ figure {
     img{
       max-height:15px;
       margin-bottom:-3px;
+      margin-left:2px;
+      margin-right:2px;
     }
   }
 

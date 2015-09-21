@@ -242,7 +242,9 @@ figure {
         text-decoration: underline; }
     .footer .built-by img {
       max-height: 15px;
-      margin-bottom: -3px; }
+      margin-bottom: -3px;
+      margin-left: 2px;
+      margin-right: 2px; }
 
 .footer-col:after {
   clear: both;
