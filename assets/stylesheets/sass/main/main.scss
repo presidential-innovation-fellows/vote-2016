@@ -226,8 +226,8 @@ figure {
   background-repeat: no-repeat;
   background-size: cover;
   color: $white;
-  height: 400px;
-  padding-top: 3.5em;
+  height: 550px;
+  padding-top: 6.5em;
 
   @include media($medium-screen) {
     height: 600px;
@@ -583,31 +583,41 @@ figure {
   }
 }
 
-.video {
+.actions {
   padding: 4em 0;
+  text-align:center;
 
-  h1 {
+  .row{
+    margin-top:35px;
+    margin-bottom:25px;
+  }
+  h2 {
     color: $brand-blue;
     margin: 0 0 0.25em;
+    font-size:1.3em;
+  }
+
+  h3 {
+    color: darken($light-gray, 10);
+    font-size: 1.1em;
+    line-height:1.3em;
   }
 
   p {
-    font-size: 1.1em;
-    font-weight: 400;
-    line-height: 1.5em;
+    line-height:1.4em;
+    font-size:1em;
   }
 
-  .col {
-    @include media($medium-screen) {
-      @include span-columns(3 of 6);
+  .button{
+    text-transform:uppercase;
+    background-color:lighten($brand-red, 1);
+    &:hover{
+      background-color:lighten($brand-red-darker,5 );
     }
+  }
 
-    @include media($large-screen) {
-      @include span-columns(3 of 6);
-
-      &.video-col {
-      }
-    }
+  img{
+    max-height:85px;
   }
 
   .content-container {
@@ -615,46 +625,36 @@ figure {
     @include clearfix;
   }
 
-  .video-col {
-    margin-bottom: 2em;
-  }
+  @include media($medium-screen) { 
 
-  .video-content {
+    .col {
+      @include span-columns(3 of 9);
+    }
 
-    h1 {
+    .row{
+      margin-top:45px;
+      margin-bottom:25px;
+    }
+
+    h2 {
+      font-size:2em;
+    }
+
+    h3 {
       font-size: 1.3em;
-      @include media($large-screen) {
-        font-size:2em;
-        margin-top:5px;
-      }
-    }
-
-    p {
-      font-size:1em;
       line-height:1.4em;
-      @include media($large-screen) {
-        font-size:1.1em;
-        line-height:1.5em;
-      }
+    }
+
+    p{
+      font-size: 1.1em;
+      line-height: 1.4em;
+    }
+
+    img{
+      max-height:150px;
     }
   }
-}
 
-.video-container {
-  height: 0;
-  margin: 0 auto;
-  padding-bottom: 56%;
-  position: relative;
-
-  iframe {
-    border: none;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 0;
-  }
 }
 
 .website-links {
@@ -706,7 +706,7 @@ figure {
   padding: 2em 0 3em 0;
   text-align: center;
 
-  h1 {
+  h2 {
     color: $white;
     margin-bottom: 0.5em;
     font-size:1.3em;
@@ -734,14 +734,19 @@ figure {
     width: 90%;
   }
 
+  .button{
+    text-transform:uppercase;
+    margin-top:10px;
+  }
+
   @include media($large-screen) {
     padding: 4em 0 5em 0;
 
-    h1{
+    h2{
       font-size:2em;
     }
 
-    h2 {
+    h3 {
       font-size: 1.25em;
       line-height:1.4em;
     }
@@ -757,12 +762,12 @@ figure {
   padding: 3em 0;
   text-align: center;
 
-  h1 {
+  h2 {
     color: $brand-blue;
     font-size:1.3em;
   }
 
-  h2 {
+  h3 {
     color: darken($light-gray, 10);
     font-size: 1.1em;
     line-height:1.3em;
@@ -783,11 +788,11 @@ figure {
 
   @include media($large-screen) {
 
-    h1{
+    h2{
       font-size:2em;
     }
 
-    h2 {
+    h3 {
       font-size: 1.3em;
       line-height:1.4em;
     }
