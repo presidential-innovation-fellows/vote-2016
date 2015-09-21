@@ -553,9 +553,7 @@ figure {
       margin-right: 4.82916%;
       width: 47.58542%; }
       .video .col:last-child {
-        margin-right: 0; }
-      .video .col.video-col {
-        width: 42%; } }
+        margin-right: 0; } }
   .video .content-container:after {
     clear: both;
     content: "";
