@@ -550,6 +550,9 @@ figure {
   padding: 3em 0;
   text-align: center; }
   @media screen and (min-width: 40em) {
+    .actions {
+      padding: 5em 0 3.5em 0; } }
+  @media screen and (min-width: 40em) {
     .actions .col {
       float: left;
       display: block;
@@ -563,6 +566,9 @@ figure {
       clear: both;
       content: "";
       display: table; }
+    @media screen and (min-width: 40em) {
+      .actions .row {
+        margin-top: 25px; } }
   .actions h1 {
     color: #23a7ff;
     font-size: 1.5em;

@@ -596,6 +596,10 @@ figure {
   padding: 3em 0;
   text-align:center;
 
+  @include media($medium-screen){
+    padding:5em 0 3.5em 0;
+  }
+
   .col {
     @include media($medium-screen) {
       @include span-columns(3 of 9);
@@ -605,6 +609,10 @@ figure {
   .row{
     @include clearfix;
     margin-bottom:25px;
+
+    @include media($medium-screen) {
+      margin-top:25px;
+    }
   }
 
   h1 {
