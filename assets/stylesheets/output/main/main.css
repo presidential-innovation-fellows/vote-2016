@@ -183,6 +183,7 @@ figure {
 
 .footer {
   background: #323a45;
+  margin-top: 4em;
   padding: 3.5em 0 4.5em; }
   .footer .disclaimer {
     color: #aeb0b5;
@@ -458,6 +459,28 @@ figure {
     opacity: 1;
     visibility: visible; }
 
+.representation {
+  background-color: #004370;
+  padding: 2em 0;
+  text-align: center; }
+  .representation h1 {
+    color: #ffffff;
+    margin-bottom: 0.5em; }
+    .representation h1 .red {
+      color: #e63350; }
+  .representation p {
+    color: #ffffff;
+    font-size: 1.1em;
+    line-height: 1.4em; }
+  .representation .content-container {
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 0 1em; }
+  .representation .image {
+    margin: 0 auto;
+    min-width: 400px;
+    width: 60%; }
+
 .safari .hero {
   background-image: url("../../../images/new-hero-ie.jpg"); }
 
@@ -619,5 +642,23 @@ figure {
 .who {
   display: block;
   margin-left: 0.35em; }
+
+.why-voteusa {
+  padding: 3em 0;
+  text-align: center; }
+  .why-voteusa h1 {
+    color: #0071bc; }
+  .why-voteusa h2 {
+    color: #93969d;
+    font-size: 1.25em; }
+  .why-voteusa p {
+    line-height: 1.2em; }
+  .why-voteusa .content-container {
+    margin: 0 auto;
+    width: 600px; }
+    .why-voteusa .content-container:after {
+      clear: both;
+      content: "";
+      display: table; }
 
 /*# sourceMappingURL=main.css.map */
