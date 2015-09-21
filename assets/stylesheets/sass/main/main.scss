@@ -58,7 +58,7 @@ figure {
 
 .footer {
   background: $dark-gray;
-  padding: 2.5em 0 0.5em;
+  padding: 2.5em 0 3.5em;
 
   .container {
     @extend %container;
@@ -121,16 +121,13 @@ figure {
 
   .pif-logo {
     width: 70px;
+    margin-left:5px;
   }
 
   .usa-logo {
     width: 130px;
-    margin-left:5px;
     margin-top:10px;
 
-    @include media($large-screen) {
-      margin-left:3%;
-    }
   }
 
   .built-by {
@@ -186,8 +183,10 @@ figure {
     }
   }
 
-  a {
-    display: block;
+  .logo{
+    a {
+      display: block;
+    }
   }
 
   img {
@@ -245,7 +244,7 @@ figure {
 
   p {
     font-family: $header-font-family;
-    font-size: 0.9em;
+    font-size: 1em;
     line-height: 1.5em;
     margin: 0;
 
@@ -286,7 +285,7 @@ figure {
   @include transition(all 0.2s ease);
   font-size: 1em;
   font-weight: 400;
-  line-height:32px;
+  line-height:35px;
 
   .header-top {
     font-size: 2em;
@@ -594,7 +593,7 @@ figure {
 
 .actions {
   background-color: lighten($brand-blue-darkest, 5);
-  padding: 2em 0;
+  padding: 3em 0;
   text-align:center;
 
   .col {

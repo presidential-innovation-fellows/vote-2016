@@ -183,7 +183,7 @@ figure {
 
 .footer {
   background: #323a45;
-  padding: 2.5em 0 0.5em; }
+  padding: 2.5em 0 3.5em; }
   .footer .disclaimer {
     color: #aeb0b5;
     font-size: 0.8em;
@@ -222,14 +222,11 @@ figure {
         .footer .site-description p {
           margin-top: 0px; } }
   .footer .pif-logo {
-    width: 70px; }
+    width: 70px;
+    margin-left: 5px; }
   .footer .usa-logo {
     width: 130px;
-    margin-left: 5px;
     margin-top: 10px; }
-    @media screen and (min-width: 53.75em) {
-      .footer .usa-logo {
-        margin-left: 3%; } }
   .footer .built-by {
     color: #aeb0b5;
     font-size: 0.9em;
@@ -280,7 +277,7 @@ figure {
     width: 38%; }
     .footer-col.right:last-child {
       margin-right: 0; } }
-.footer-col a {
+.footer-col .logo a {
   display: block; }
 .footer-col img {
   width: 100%; }
@@ -324,7 +321,7 @@ figure {
       padding-top: 5em; } }
   .hero p {
     font-family: "Merriweather";
-    font-size: 0.9em;
+    font-size: 1em;
     line-height: 1.5em;
     margin: 0; }
     @media screen and (min-width: 40em) {
@@ -352,7 +349,7 @@ figure {
   transition: all 0.2s ease;
   font-size: 1em;
   font-weight: 400;
-  line-height: 32px; }
+  line-height: 35px; }
   .hero-header .header-top {
     font-size: 2em; }
     @media screen and (min-width: 40em) {
@@ -550,7 +547,7 @@ figure {
 
 .actions {
   background-color: #153a66;
-  padding: 2em 0;
+  padding: 3em 0;
   text-align: center; }
   @media screen and (min-width: 40em) {
     .actions .col {
