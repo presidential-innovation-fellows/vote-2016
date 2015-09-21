@@ -16,9 +16,14 @@
   @include media($medium-screen) {
     height: 562px;
     left: 50%;
-    margin-left: -320px;
+    margin-left: -285px;
     padding: 2.25em 2em 1.5em;
     top: 2em;
+    width: 570px;
+  }
+
+  @include media($large-screen) {
+    margin-left: -310px;
     width: 620px;
   }
 
@@ -42,7 +47,11 @@
   }
 
   .button {
-    font-size: 1.1em;
+    font-size: 1em;
+
+    @include media($medium-screen) {
+      font-size: 1.1em;
+    }
   }
 
   .close {

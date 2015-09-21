@@ -2,12 +2,21 @@
 @import "neat/neat";
 @import "components/all";
 
+a {
+  color: $brand-blue;
+}
+
 body {
   font-size: 100%;
   line-height: 1;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
+
+  &.no-scroll {
+    height: 100%;
+    overflow: hidden;
+  }
 }
 
 aside,
@@ -30,8 +39,13 @@ figure {
   color: $white;
   display: inline-block;
   font-weight: 600;
-  padding: 0.8em 1.3em;
+  margin-bottom: 0.5em;
+  padding: 0.7em 1.1em;
   text-decoration: none;
+
+  @include media($medium-screen) {
+    padding: 0.8em 1.3em;
+  }
 
   &:active {
     background-color: $brand-blue-darkest;
@@ -65,7 +79,7 @@ figure {
     }
   }
 
-  
+
 
   .gsa-logo {
     float: left;
@@ -90,10 +104,11 @@ figure {
     overflow: hidden;
     padding-left: 1em;
     width: auto;
-    p{
+
+    p {
       margin-top:10px;
 
-      @include media($large-screen){ 
+      @include media($large-screen) {
         margin-top:0px;
       }
     }
@@ -125,7 +140,7 @@ figure {
       margin-right:0px;
     }
   }
-  
+
   &.middle{
     @include media($large-screen) {
       @include span-columns(3 of 9);
@@ -270,47 +285,58 @@ figure {
   }
 }
 
-.intro-slide {
-  height: 100%;
+.pdf-modal {
 
   h2 {
-    font-size: 2em;
-    margin: 0.25em 0 1em;
+    font-size: 1.75em;
+    margin: 0.25em 0 1.25em;
+
+    @include media($medium-screen) {
+      font-size: 2em;
+    }
   }
 
   h3 {
-    font-size: 1.15em;
+    font-size: 1em;
     margin: 0 0 0.25em;
     padding-top: 0.5em;
+
+    @include media($medium-screen) {
+      font-size: 1.15em;
+    }
   }
 
   p {
+    font-size: 0.9em;
     margin-top: 0;
+
+    @include media($medium-screen) {
+      font-size: 1em;
+    }
   }
 
   ul {
-    margin-bottom: 0.25em;
     list-style: none;
+    margin-bottom: .75em;
     padding-left: 0;
   }
 
   .content {
-    @include span-columns(9);
+    @include span-columns(4 of 6);
   }
 
-  .disclaimer {
-    color: darken($light-gray, 10);
-    font-size: 0.7em;
-    margin-top: 0.5em;
+  .eac {
+    color: darken($light-gray, 20);
+    font-size: 0.9em;
+    text-align: center;
   }
 
   .image {
-    float: left;
-    height: 90px;
-    width: 90px;
+    @include span-columns(2 of 6);
+    max-width: 60px;
 
     img {
-      width: 78%;
+      width: 100%;
     }
   }
 
@@ -326,6 +352,7 @@ figure {
 
   .step {
     @include clearfix;
+    margin-bottom: 0.5em;
 
     &:first-child {
       border-top: 0;
@@ -334,7 +361,7 @@ figure {
 
   .steps {
     @include media($medium-screen) {
-      margin: 0 auto;
+      margin: 0 auto 1em;
       width: 90%;
     }
   }
@@ -476,31 +503,6 @@ figure {
     list-style: none;
     margin: 0;
     padding-left: 0;
-  }
-}
-
-.slides {
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-
-  .slide {
-    float: left;
-    height: 100%;
-    min-width: 556px;
-    width: 50%;
-  }
-
-  .slide-container {
-    @include transition(all 0.4s ease);
-    height: 100%;
-    left: 0;
-    position: absolute;
-
-    &.right {
-      left: -100%;
-    }
   }
 }
 

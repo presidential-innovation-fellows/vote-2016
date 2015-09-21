@@ -65,11 +65,15 @@ h6 {
   z-index: 1000; }
   @media screen and (min-width: 40em) {
     .modal {
-      height: 550px;
+      height: 562px;
       left: 50%;
-      margin-left: -320px;
+      margin-left: -285px;
       padding: 2.25em 2em 1.5em;
       top: 2em;
+      width: 570px; } }
+  @media screen and (min-width: 53.75em) {
+    .modal {
+      margin-left: -310px;
       width: 620px; } }
   .active.modal {
     -webkit-transform: translateY(0);
@@ -87,7 +91,10 @@ h6 {
   .modal .action {
     text-align: center; }
   .modal .button {
-    font-size: 1.1em; }
+    font-size: 1em; }
+    @media screen and (min-width: 40em) {
+      .modal .button {
+        font-size: 1.1em; } }
   .modal .close {
     color: #323a45;
     cursor: pointer;
@@ -131,12 +138,18 @@ h6 {
   .state-select select:focus {
     box-shadow: 0 2px 2px rgba(227, 28, 61, 0.1); }
 
+a {
+  color: #0071bc; }
+
 body {
   font-size: 100%;
   line-height: 1;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased; }
+  body.no-scroll {
+    height: 100%;
+    overflow: hidden; }
 
 aside,
 div,
@@ -156,8 +169,12 @@ figure {
   color: #ffffff;
   display: inline-block;
   font-weight: 600;
-  padding: 0.8em 1.3em;
+  margin-bottom: 0.5em;
+  padding: 0.7em 1.1em;
   text-decoration: none; }
+  @media screen and (min-width: 40em) {
+    .button {
+      padding: 0.8em 1.3em; } }
   .button:active {
     background-color: #112e51; }
   .button:hover {
@@ -336,54 +353,68 @@ figure {
       .hero-header .who {
         font-size: 4.5em; } }
 
-.intro-slide {
-  height: 100%; }
-  .intro-slide h2 {
-    font-size: 2em;
-    margin: 0.25em 0 1em; }
-  .intro-slide h3 {
-    font-size: 1.15em;
-    margin: 0 0 0.25em;
-    padding-top: 0.5em; }
-  .intro-slide p {
-    margin-top: 0; }
-  .intro-slide ul {
-    margin-bottom: 0.25em;
-    list-style: none;
-    padding-left: 0; }
-  .intro-slide .content {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 74.41059%; }
-    .intro-slide .content:last-child {
-      margin-right: 0; }
-  .intro-slide .disclaimer {
-    color: #93969d;
-    font-size: 0.7em;
-    margin-top: 0.5em; }
-  .intro-slide .image {
-    float: left;
-    height: 90px;
-    width: 90px; }
-    .intro-slide .image img {
-      width: 78%; }
-  .intro-slide .other-options {
-    font-size: 0.9em;
-    margin-top: 0.75em;
-    text-align: center; }
-    .intro-slide .other-options a {
-      color: #0071bc; }
-  .intro-slide .step:after {
+.pdf-modal h2 {
+  font-size: 1.75em;
+  margin: 0.25em 0 1.25em; }
+  @media screen and (min-width: 40em) {
+    .pdf-modal h2 {
+      font-size: 2em; } }
+.pdf-modal h3 {
+  font-size: 1em;
+  margin: 0 0 0.25em;
+  padding-top: 0.5em; }
+  @media screen and (min-width: 40em) {
+    .pdf-modal h3 {
+      font-size: 1.15em; } }
+.pdf-modal p {
+  font-size: 0.9em;
+  margin-top: 0; }
+  @media screen and (min-width: 40em) {
+    .pdf-modal p {
+      font-size: 1em; } }
+.pdf-modal ul {
+  list-style: none;
+  margin-bottom: .75em;
+  padding-left: 0; }
+.pdf-modal .content {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 65.05695%; }
+  .pdf-modal .content:last-child {
+    margin-right: 0; }
+.pdf-modal .eac {
+  color: #797c84;
+  font-size: 0.9em;
+  text-align: center; }
+.pdf-modal .image {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 30.11389%;
+  max-width: 60px; }
+  .pdf-modal .image:last-child {
+    margin-right: 0; }
+  .pdf-modal .image img {
+    width: 100%; }
+.pdf-modal .other-options {
+  font-size: 0.9em;
+  margin-top: 0.75em;
+  text-align: center; }
+  .pdf-modal .other-options a {
+    color: #0071bc; }
+.pdf-modal .step {
+  margin-bottom: 0.5em; }
+  .pdf-modal .step:after {
     clear: both;
     content: "";
     display: table; }
-  .intro-slide .step:first-child {
+  .pdf-modal .step:first-child {
     border-top: 0; }
-  @media screen and (min-width: 40em) {
-    .intro-slide .steps {
-      margin: 0 auto;
-      width: 90%; } }
+@media screen and (min-width: 40em) {
+  .pdf-modal .steps {
+    margin: 0 auto 1em;
+    width: 90%; } }
 
 .js .no-js-hide {
   display: none; }
@@ -463,26 +494,6 @@ figure {
     list-style: none;
     margin: 0;
     padding-left: 0; }
-
-.slides {
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  width: 100%; }
-  .slides .slide {
-    float: left;
-    height: 100%;
-    min-width: 556px;
-    width: 50%; }
-  .slides .slide-container {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    height: 100%;
-    left: 0;
-    position: absolute; }
-    .slides .slide-container.right {
-      left: -100%; }
 
 .active .slide-container {
   width: 200%; }
