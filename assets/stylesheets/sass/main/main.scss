@@ -543,6 +543,7 @@ figure {
   }
 }
 
+.no-vote-modal,
 .state-modal {
 
   @include media($medium-screen) {
@@ -550,7 +551,8 @@ figure {
     margin: -160px 0 0 -320px;
     top: 50%;
   }
-  p{
+
+  p {
     text-align:center;
   }
 }

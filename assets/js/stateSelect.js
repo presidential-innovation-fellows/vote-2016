@@ -31,7 +31,18 @@ var stateWebsites = [
   { "state": "UT", "website": "https://secure.utah.gov/voterreg/index.html" },
   { "state": "VA", "website": "https://www.vote.virginia.gov/" },
   { "state": "WA", "website": "https://wei.sos.wa.gov/agency/osos/en/pages/myvote.aspx" }
-]
+];
+
+var noVoting = [
+  { "state": "AS", "website": "http://www.americansamoaelectionoffice.org" },
+  { "state": "GU", "website": "http://gec.guam.gov" },
+  { "state": "MP", "website": "http://votecnmi.gov.mp" },
+  { "state": "ND", "websote": "https://vip.sos.nd.gov/PortalList.aspx" },
+  { "state": "NH", "website": "http://sos.nh.gov/Elections.aspx" },
+  { "state": "PR", "website": "http://ceepur.org/"},
+  { "state": "VI", "website": "http://www.vivote.gov" },
+  { "state": "WY", "website": "http://soswy.state.wy.us/elections/" },
+];
 
 vote2016.website = {
 
@@ -67,11 +78,15 @@ vote2016.website = {
 
   checkWebsite: function(self) {
     var selectedState = $(self).val(),
-        state = $.grep(stateWebsites, function(e){ return e.state == selectedState; });
+        state = $.grep(stateWebsites, function(e){ return e.state == selectedState; }),
+        noVote = $.grep(noVoting, function(e){ return e.state == selectedState; });
 
-    if (state.length == 0) {
+
+    if (noVote.length === 1) {
+      vote2016.website.loadNoVoteModal(noVote);
+    } else if (state.length === 0) {
       vote2016.website.loadPdfModal();
-    } else if (state.length == 1) {
+    } else if (state.length === 1) {
       vote2016.website.loadStateModal(state);
     } else {
       alert("Error - Something Went Wrong");
@@ -82,6 +97,15 @@ vote2016.website = {
     $(".overlay").removeClass("active");
     $(".modal").removeClass("active");
     $("body").removeClass("no-scroll");
+  },
+
+  loadNoVoteModal: function(state) {
+    var stateName = $(".state-select option:selected").text(),
+        stateLink = state[0].website;
+    $(".no-vote-modal .territory-name").text(stateName);
+    $(".no-vote-modal .state-link").attr("href", stateLink);
+    $(".overlay").addClass("active");
+    $(".no-vote-modal").addClass("active");
   },
 
   loadStateModal: function(state) {
