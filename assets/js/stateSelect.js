@@ -6,9 +6,9 @@ var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
   $("html").addClass("safari");
 }
 
-var isIos = !!(navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
+var isIos = !!/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-if (isIos[0] < 8) {
+if (isIos) {
   $("html").addClass("ios");
 }
 
