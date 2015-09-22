@@ -8,7 +8,7 @@ var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
 
 var isIos = !!(navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
 
-if (isIos[0] < 8) {
+if (isIos) {
   $("html").addClass("ios");
 }
 
