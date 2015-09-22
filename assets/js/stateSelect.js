@@ -38,9 +38,7 @@ vote2016.website = {
   bindModalClose: function() {
     $(".close").bind("click", function(e){
       e.preventDefault();
-      $(".overlay").removeClass("active");
-      $(".modal").removeClass("active");
-      $("body").removeClass("no-scroll");
+      vote2016.website.closeModal();
     });
   },
 
@@ -80,6 +78,12 @@ vote2016.website = {
     }
   },
 
+  closeModal: function() {
+    $(".overlay").removeClass("active");
+    $(".modal").removeClass("active");
+    $("body").removeClass("no-scroll");
+  },
+
   loadStateModal: function(state) {
     var stateName = $(".state-select option:selected").text(),
         stateLink = state[0].website;
@@ -96,3 +100,9 @@ vote2016.website = {
 };
 
 $(document).ready(vote2016.website.bindFunctions());
+
+$(document).keyup(function(e) {
+  if (e.keyCode == 27) {
+    vote2016.website.closeModal();
+  }
+});
