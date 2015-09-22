@@ -16,7 +16,7 @@ if (isIos) {
 var stateWebsites = [
   { "state": "AZ", "website": "https://servicearizona.com/webapp/evoter/" },
   { "state": "CA", "website": "http://registertovote.ca.gov/" },
-  { "state": "CO", "website": "https://www.sos.state.co.us/voter-classic/secuRegVoterIntro.do" },
+  { "state": "CO", "website": "https://www.sos.state.co.us/voter-classic/pages/pub/home.xhtml" },
   { "state": "CT", "website": "https://voterregistration.ct.gov/OLVR/" },
   { "state": "DE", "website": "https://ivote.de.gov/" },
   { "state": "GA", "website": "https://registertovote.sos.ga.gov/GAOLVR/#no-back-button" },
