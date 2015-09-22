@@ -178,7 +178,7 @@ figure {
   &.right{
     @include media($large-screen) {
       @include span-columns(4 of 9);
-      float:right;
+      float: right;
       width:38%;
     }
   }
@@ -253,7 +253,7 @@ figure {
     }
   }
 
-  .actions {
+  .no-js-hide {
     font-family: $header-font-family;
     font-size: 1.1em;
     line-height: 1.5em;
@@ -416,7 +416,9 @@ figure {
   }
 }
 
-.no-cssgradients {
+.ios,
+.no-cssgradients,
+.no-multiplebgs {
 
   .hero {
     background-image: url("../../../images/new-hero-ie.jpg");
@@ -435,6 +437,15 @@ figure {
 }
 
 .no-svg {
+
+  .actions {
+
+    .col {
+      @include media($medium-screen) {
+        width: 30%;
+      }
+    }
+  }
 
   .social-buttons {
 
