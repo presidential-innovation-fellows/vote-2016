@@ -43,7 +43,6 @@ var noVoting = [
   { "state": "AS", "website": "http://www.americansamoaelectionoffice.org" },
   { "state": "GU", "website": "http://gec.guam.gov" },
   { "state": "MP", "website": "http://votecnmi.gov.mp" },
-  { "state": "MT", "website": "http://sos.mt.gov/ELECTIONS/Officials/Forms/documents/Voter-Registration-Application.pdf" },
   { "state": "ND", "websote": "https://vip.sos.nd.gov/PortalList.aspx" },
   { "state": "NH", "website": "http://sos.nh.gov/Elections.aspx" },
   { "state": "PR", "website": "http://ceepur.org/"},
