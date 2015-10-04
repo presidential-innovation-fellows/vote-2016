@@ -29,6 +29,7 @@ var stateWebsites = [
   { "state": "MD", "website": "https://voterservices.elections.state.md.us/OnlineVoterRegistration/VoterType" },
   { "state": "MN", "website": "https://mnvotes.sos.state.mn.us/VoterRegistration/VoterRegistrationStep1.aspx" },
   { "state": "MO", "website": "http://www.sos.mo.gov/elections/goVoteMissouri/register.aspx" },
+  { "state": "NE", "website": "https://www.nebraska.gov/apps-sos-voter-registration/" },
   { "state": "NV", "website": "https://nvsos.gov/sosvoterservices/Registration/step1.aspx" },
   { "state": "NY", "website": "http://dmv.ny.gov/org/more-info/electronic-voter-registration-application" },
   { "state": "OR", "website": "https://secure.sos.state.or.us/orestar/vr/register.do?lang=eng&source=SOS" },
@@ -36,7 +37,8 @@ var stateWebsites = [
   { "state": "SC", "website": "https://info.scvotes.sc.gov/eng/ovr/start.aspx" },
   { "state": "UT", "website": "https://secure.utah.gov/voterreg/index.html" },
   { "state": "VA", "website": "https://www.vote.virginia.gov/" },
-  { "state": "WA", "website": "https://wei.sos.wa.gov/agency/osos/en/pages/myvote.aspx" }
+  { "state": "WA", "website": "https://wei.sos.wa.gov/agency/osos/en/pages/myvote.aspx" },
+  { "state": "WV", "website": "https://apps.sos.wv.gov/elections/voter/" }
 ];
 
 var noVoting = [
