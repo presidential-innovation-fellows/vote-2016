@@ -22,4 +22,7 @@ $('#inperson-voting').on('click', function() {
 $('select').on('change', function() {
   var state = this.value;
   ga('send', 'event', 'vote', 'select', state);
+	// Optimizely event support
+	window['optimizely'] = window['optimizely'] || [];
+	window.optimizely.push(["trackEvent", "stateSelect"]);
 });
