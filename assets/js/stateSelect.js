@@ -88,7 +88,9 @@ vote2016.website = {
 
   checkWebsite: function(self) {
     var selectedState = $(self).val(),
-        gtgState = $.grep(autoRegistered, function(e){return e.state == selectedState; }),
+        gtgState = $.grep(autoRegistered, function(e){
+          return e.state == selectedState;
+        }),
         state = $.grep(stateWebsites, function(e){ return e.state == selectedState; }),
         noVote = $.grep(noVoting, function(e){ return e.state == selectedState; });
 
