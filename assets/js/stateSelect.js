@@ -12,6 +12,9 @@ if (isIos) {
   $("html").addClass("ios");
 }
 
+var autoRegistered = [
+  { "state": "ND", "website": "https://vip.sos.nd.gov/PortalList.aspx" }
+];
 
 var stateWebsites = [
   { "state": "AZ", "website": "https://servicearizona.com/webapp/evoter/" },
@@ -45,7 +48,6 @@ var noVoting = [
   { "state": "AS", "website": "http://www.americansamoaelectionoffice.org" },
   { "state": "GU", "website": "http://gec.guam.gov" },
   { "state": "MP", "website": "http://votecnmi.gov.mp" },
-  { "state": "ND", "websote": "https://vip.sos.nd.gov/PortalList.aspx" },
   { "state": "NH", "website": "http://sos.nh.gov/Elections.aspx" },
   { "state": "PR", "website": "http://ceepur.org/"},
   { "state": "VI", "website": "http://www.vivote.gov" },
@@ -86,12 +88,17 @@ vote2016.website = {
 
   checkWebsite: function(self) {
     var selectedState = $(self).val(),
+        gtgState = $.grep(autoRegistered, function(e){
+          return e.state == selectedState;
+        }),
         state = $.grep(stateWebsites, function(e){ return e.state == selectedState; }),
         noVote = $.grep(noVoting, function(e){ return e.state == selectedState; });
 
 
     if (noVote.length === 1) {
       vote2016.website.loadNoVoteModal(noVote);
+    } else if (gtgState.length === 1) {
+      vote2016.website.loadAlreadyRegisteredModal(gtgState);
     } else if (state.length === 0) {
       vote2016.website.loadPdfModal();
     } else if (state.length === 1) {
@@ -105,6 +112,16 @@ vote2016.website = {
     $(".overlay").removeClass("active");
     $(".modal").removeClass("active");
     $("body").removeClass("no-scroll");
+  },
+
+  loadAlreadyRegisteredModal: function(state) {
+    var stateName = $(".state-select option:selected").text(),
+        stateLink = state[0].website;
+
+    $(".already-registered-modal .state-name").text(stateName);
+    $(".already-registered-modal .state-link").attr("href", stateLink);
+    $(".overlay").addClass("active");
+    $(".already-registered-modal").addClass("active");
   },
 
   loadNoVoteModal: function(state) {
