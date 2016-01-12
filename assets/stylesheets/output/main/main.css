@@ -705,7 +705,7 @@ figure {
       color: #e63350;
       display: block;
       font-size: 2.25em;
-      margin-bottom: 0.25em; }
+      margin: 0.17em 0 0.25em; }
   .representation p {
     font-size: 1em;
     line-height: 1.3em; }
