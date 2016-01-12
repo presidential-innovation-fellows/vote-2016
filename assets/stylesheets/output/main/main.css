@@ -567,11 +567,13 @@ figure {
   width: 200%; }
 
 @media screen and (min-width: 40em) {
+  .already-registered-modal,
   .no-vote-modal,
   .state-modal {
     height: 320px;
     margin: -160px 0 0 -320px;
     top: 50%; } }
+.already-registered-modal p,
 .no-vote-modal p,
 .state-modal p {
   text-align: center; }
