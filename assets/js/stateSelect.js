@@ -17,13 +17,17 @@ var autoRegistered = [
 ];
 
 var stateWebsites = [
+  { "state": "AK", "website": "https://voterregistration.alaska.gov/" },
+  { "state": "AL", "website": "https://www.alabamavotes.gov/olvr/default.aspx" },
   { "state": "AZ", "website": "https://servicearizona.com/webapp/evoter/" },
   { "state": "CA", "website": "http://registertovote.ca.gov/" },
   { "state": "CO", "website": "https://www.sos.state.co.us/voter-classic/pages/pub/home.xhtml" },
   { "state": "CT", "website": "https://voterregistration.ct.gov/OLVR/" },
+  { "state": "DC", "website": "https://www.vote4dc.com/Voter/Voter/CommonVoter" },
   { "state": "DE", "website": "https://ivote.de.gov/" },
   { "state": "GA", "website": "https://registertovote.sos.ga.gov/GAOLVR/#no-back-button" },
   { "state": "HI", "website": "https://olvr.hawaii.gov/" },
+  { "state": "IA", "website": "https://sos.iowa.gov/elections/voterinformation/voterregistration.html" },
   { "state": "IL", "website": "https://ova.elections.il.gov/" },
   { "state": "IN", "website": "http://indianavoters.in.gov/PublicSite/OVR/Introduction.aspx" },
   { "state": "KS", "website": "https://www.kdor.org/voterregistration/Default.aspx" },
@@ -33,6 +37,7 @@ var stateWebsites = [
   { "state": "MN", "website": "https://mnvotes.sos.state.mn.us/VoterRegistration/VoterRegistrationStep1.aspx" },
   { "state": "MO", "website": "http://www.sos.mo.gov/elections/goVoteMissouri/register.aspx" },
   { "state": "NE", "website": "https://www.nebraska.gov/apps-sos-voter-registration/" },
+  { "state": "NM", "website": "https://portal.sos.state.nm.us/OVR/(S(4hlbisjwvitf2uufzogfckge))/WebPages/InstructionsStep1.aspx" },
   { "state": "NV", "website": "https://nvsos.gov/sosvoterservices/Registration/step1.aspx" },
   { "state": "NY", "website": "http://dmv.ny.gov/org/more-info/electronic-voter-registration-application" },
   { "state": "OR", "website": "https://secure.sos.state.or.us/orestar/vr/register.do?lang=eng&source=SOS" },
