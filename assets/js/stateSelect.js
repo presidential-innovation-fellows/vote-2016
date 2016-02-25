@@ -35,7 +35,7 @@ var stateWebsites = [
   { "state": "MA", "website": "https://www.sec.state.ma.us/ovr/" },
   { "state": "MD", "website": "https://voterservices.elections.state.md.us/OnlineVoterRegistration/VoterType" },
   { "state": "MN", "website": "https://mnvotes.sos.state.mn.us/VoterRegistration/VoterRegistrationStep1.aspx" },
-  { "state": "MO", "website": "http://www.sos.mo.gov/elections/goVoteMissouri/register.aspx" },
+  { "state": "MO", "website": "http://www.sos.mo.gov/elections/goVoteMissouri/register" },
   { "state": "NE", "website": "https://www.nebraska.gov/apps-sos-voter-registration/" },
   { "state": "NM", "website": "https://portal.sos.state.nm.us/OVR/(S(4hlbisjwvitf2uufzogfckge))/WebPages/InstructionsStep1.aspx" },
   { "state": "NV", "website": "https://nvsos.gov/sosvoterservices/Registration/step1.aspx" },
