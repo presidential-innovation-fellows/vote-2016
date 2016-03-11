@@ -31,6 +31,7 @@ var stateWebsites = [
   { "state": "IL", "website": "https://ova.elections.il.gov/" },
   { "state": "IN", "website": "http://indianavoters.in.gov/PublicSite/OVR/Introduction.aspx" },
   { "state": "KS", "website": "https://www.kdor.org/voterregistration/Default.aspx" },
+  { "state": "KY", "website": "https://vrsws.sos.ky.gov/ovrweb/"},
   { "state": "LA", "website": "http://www.sos.la.gov/ElectionsAndVoting/Pages/OnlineVoterRegistration.aspx" },
   { "state": "MA", "website": "https://www.sec.state.ma.us/ovr/" },
   { "state": "MD", "website": "https://voterservices.elections.state.md.us/OnlineVoterRegistration/VoterType" },
