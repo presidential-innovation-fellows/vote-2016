@@ -60,6 +60,27 @@ var noVoting = [
   { "state": "WY", "website": "http://soswy.state.wy.us/elections/" },
 ];
 
+var pdfVoting = [
+  { "state": "AR", "website": "http://www.sos.arkansas.gov/elections/documents/voter_reg_ap_6-11.pdf" },
+  { "state": "FL", "website": "http://dos.myflorida.com/media/693757/dsde39.pdf" },
+  { "state": "ID", "website": "http://www.idahovotes.gov/VoterReg/voter_registration.pdf" },
+  { "state": "SD", "website": "https://sdsos.gov/elections-voting/assets/FinalVoterRegistrationForm11.16.12.pdf" },
+  { "state": "ME", "website": "http://www.maine.gov/sos/cec/elec/data/voterregcard2012.pdf" },
+  { "state": "MI", "website": "./assets/downloads/fvr-6-25-14-eng.pdf" },
+  { "state": "MS", "website": "./assets/downloads/fvr-6-25-14-eng.pdf" },
+  { "state": "ME", "website": "./assets/downloads/fvr-6-25-14-eng.pdf" },
+  { "state": "MT", "website": "./assets/downloads/fvr-6-25-14-eng.pdf" },
+  { "state": "NJ", "website": "./assets/downloads/fvr-6-25-14-eng.pdf" },
+  { "state": "NC", "website": "./assets/downloads/fvr-6-25-14-eng.pdf" },
+  { "state": "OH", "website": "./assets/downloads/fvr-6-25-14-eng.pdf" },
+  { "state": "OK", "website": "./assets/downloads/fvr-6-25-14-eng.pdf" },
+  { "state": "RI", "website": "./assets/downloads/fvr-6-25-14-eng.pdf" },
+  { "state": "TN", "website": "./assets/downloads/fvr-6-25-14-eng.pdf" },
+  { "state": "TX", "website": "./assets/downloads/fvr-6-25-14-eng.pdf" },
+  { "state": "VT", "website": "./assets/downloads/fvr-6-25-14-eng.pdf" },
+  { "state": "WI", "website": "./assets/downloads/fvr-6-25-14-eng.pdf" },
+];
+
 vote2016.website = {
 
   bindModalClose: function() {
@@ -98,15 +119,14 @@ vote2016.website = {
           return e.state == selectedState;
         }),
         state = $.grep(stateWebsites, function(e){ return e.state == selectedState; }),
-        noVote = $.grep(noVoting, function(e){ return e.state == selectedState; });
-
-
+        noVote = $.grep(noVoting, function(e){ return e.state == selectedState; })
+        pdfState = $.grep(pdfVoting, function(e){ return e.state == selectedState; });
     if (noVote.length === 1) {
       vote2016.website.loadNoVoteModal(noVote);
     } else if (gtgState.length === 1) {
       vote2016.website.loadAlreadyRegisteredModal(gtgState);
-    } else if (state.length === 0) {
-      vote2016.website.loadPdfModal();
+    } else if (pdfState.length === 1) {
+      vote2016.website.loadPdfModal(pdfState);
     } else if (state.length === 1) {
       vote2016.website.loadStateModal(state);
     } else {
@@ -123,7 +143,6 @@ vote2016.website = {
   loadAlreadyRegisteredModal: function(state) {
     var stateName = $(".state-select option:selected").text(),
         stateLink = state[0].website;
-
     $(".already-registered-modal .state-name").text(stateName);
     $(".already-registered-modal .state-link").attr("href", stateLink);
     $(".overlay").addClass("active");
@@ -148,9 +167,12 @@ vote2016.website = {
     $(".state-modal").addClass("active");
   },
 
-  loadPdfModal: function() {
+  loadPdfModal: function(state) {
+    var stateName = $(".state-select option:selected").text(),
+        stateLink = state[0].website;
     $(".overlay").addClass("active");
     $(".pdf-modal").addClass("active");
+    $(".pdf-modal .state-link").attr("href", stateLink);
   }
 };
 
