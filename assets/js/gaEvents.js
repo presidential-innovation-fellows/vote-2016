@@ -18,13 +18,13 @@ function gaVoteEvent (type, context) {
 
 /*
  * Send Optimizely track event
- * This event is fired with a type for the `trackEvent` method for Optimizely. It
- * handles the checking for the `optimizely` property on the window so only a type
- * needs to be supplied.
+ * This event is fired with a type for the `trackEvent` method for Optimizely.
+ * It handles the checking for the `optimizely` property on the window so only a
+ * type needs to be supplied.
  * @param type String The type of event to pass to `optimizely#trackEvent`.
  */
 function sendTrackEvent (type) {
-	window['optimizely'] = window['optimizely'] || [];
+	window.optimizely = window.optimizely || [];
 	window.optimizely.push(['trackEvent', type]);
 }
 
