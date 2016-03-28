@@ -48,8 +48,8 @@ $('#inperson-voting').on('click', function() {
 
 // GA hook for tracking whether the user selected a state
 $('select').on('change', function() {
-  var state = this.value;
-  gaVoteEvent('select', state);
+	var state = this.value;
+	gaVoteEvent('select', state);
 	// Optimizely event support
 	sendTrackEvent('stateSelect');
 });
