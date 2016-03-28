@@ -1,28 +1,25 @@
 // GA hooks for tracking voting registration conversions
+//
 $('#form-voting').on('click', function() {
-	ga('send', 'event', 'vote', 'register', 'form');
+	gaVoteEvent('register', 'form');
 	// Optimizely event support
-	window['optimizely'] = window['optimizely'] || [];
-	window.optimizely.push(["trackEvent", "voterSignup"]);
+	sendTrackEvent('voterSignup');
 });
 $('#online-voting').on('click', function() {
-	ga('send', 'event', 'vote', 'register', 'online');
+	gaVoteEvent('register', 'online');
 	// Optimizely event support
-	window['optimizely'] = window['optimizely'] || [];
-	window.optimizely.push(["trackEvent", "voterSignup"]);
+	sendTrackEvent('voterSignup');
 });
 $('#inperson-voting').on('click', function() {
-	ga('send', 'event', 'vote', 'register', 'inperson');
+	gaVoteEvent('register', 'inperson');
 	// Optimizely event support
-	window['optimizely'] = window['optimizely'] || [];
-	window.optimizely.push(["trackEvent", "voterSignup"]);
+	sendTrackEvent('voterSignup');
 });
 
 // GA hook for tracking whether the user selected a state
 $('select').on('change', function() {
   var state = this.value;
-  ga('send', 'event', 'vote', 'select', state);
+  gaVoteEvent('select', state);
 	// Optimizely event support
-	window['optimizely'] = window['optimizely'] || [];
-	window.optimizely.push(["trackEvent", "stateSelect"]);
+	sendTrackEvent('stateSelect');
 });
