@@ -18,8 +18,8 @@ sass --watch assets/stylesheets/sass:assets/stylesheets/output
 
 This project is in the worldwide [public domain](LICENSE.md). As stated in [CONTRIBUTING](CONTRIBUTING.md):
 
-> This project is in the public domain within the United States, and copyright
-> and related rights in the work worldwide are waived through the
+> This project is in the public domain within the United States. Worldwide,
+> copyright and related rights are waived through the
 > [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
 
 > All contributions to this project will be released under the CC0 dedication.
