@@ -1,5 +1,11 @@
 # Vote 2016
 
+**This repository has been deprecated. Please use the [`18F/vote-2016`] [18f-fork]
+fork to follow development for this project or to file any issues. You must open
+all pull requests against the `master` branch on the `18F/vote-2016` repository.**
+
+[18f-fork]: https://github.com/18F/vote-2016 "GitHub 18F Vote 2016 Fork"
+
 To get the SASS working, run the following command from the project directory:
 
 ```sh
