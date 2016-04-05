@@ -48,6 +48,7 @@ var stateWebsites = [
   { "state": "SC", "website": "https://info.scvotes.sc.gov/eng/ovr/start.aspx?ref=voteusa" },
   { "state": "UT", "website": "https://secure.utah.gov/voterreg/index.html?ref=voteusa" },
   { "state": "VA", "website": "https://www.vote.virginia.gov/?ref=voteusa" },
+  { "state": "VT", "website": "https://olvr.sec.state.vt.us/?ref=voteusa" },
   { "state": "WA", "website": "https://wei.sos.wa.gov/agency/osos/en/pages/myvote.aspx?ref=voteusa" },
   { "state": "WV", "website": "https://ovr.sos.wv.gov/Register?ref=voteusa" }
 ];
