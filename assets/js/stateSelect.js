@@ -89,9 +89,23 @@ vote2016.website = {
   },
 
   bindStateSelect: function() {
+    var timer;
     $(".state-select select").bind("change", function(){
+      window.clearTimeout(timer);
+      vote2016.website.closeModal();
       vote2016.website.checkWebsite($(this));
       $("body").addClass("no-scroll");
+    });
+    $(".state-select select").on("click", function() {
+      var $select = $(this);
+      window.clearTimeout(timer);
+      timer = window.setTimeout(function () {
+        vote2016.website.checkWebsite($select);
+        $("body").addClass("no-scroll");
+      }, 2500);
+      if (null == $select.val()) {
+        window.clearTimeout(timer);
+      }
     });
   },
 
