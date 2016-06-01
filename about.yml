@@ -1,0 +1,132 @@
+---
+# .about.yml project metadata
+#
+# Short name that acts as the project identifier (required)
+name: vote-usa-gov
+
+# Full proper name of the project (required)
+full_name: Vote.USA.Gov
+
+# The type of content in the repo
+# values: app, docs, policy
+type: app
+
+# Describes whether a project team, working group/guild, etc. owns the repo (required)
+# values: guild, working-group, project
+owner_type: project
+
+# Name of the main project repo if this is a sub-repo; name of the working group/guild repo if this is a working group/guild subproject
+#parent:
+
+# Maturity stage of the project (required)
+# values: discovery, alpha, beta, live, sunset, transfer, end
+stage: beta
+
+# Description of the project
+description: A website to help citizens identify how to register in their respective state.
+
+# Tags that describe the project or aspects of the project
+tags:
+- static
+- vote
+
+# Should this repo have automated tests? If so, set to `true`. (required)
+# values: true, false
+testable: true
+
+# Team members contributing to the project (required)
+# Items:
+# - github: GitHub user name
+#   id: Internal team identifier/user name
+#   role: Team member's role; leads should be designated as 'lead'
+team:
+- github: stroupaloop
+  id: Andrew Stroup
+  role: Presidential Innovation Fellow
+
+- github: katemccall-kiley
+  id: Kate McCall-Kiley
+  role: Presidential Innovation Fellow
+
+- github: lukad03
+  id: Luke Keller
+  role: Presidential Innovation Fellow
+
+- github: jpyuda
+  id: John Yuda
+  role: 18F Product
+
+# Partners for whom the project is developed
+partners:
+- GSA
+
+# Organizations or individuals who have adopted the project for their own use
+# Items:
+# - id: The name of the organization or individual
+#   url: A URL to the user's version of the project
+#users:
+#-
+
+# Brief descriptions of significant project developments
+#milestones:
+#-
+
+# Technologies used to build the project
+stack:
+- html
+- css
+- javascript
+
+# Brief description of the project's outcomes
+impact: The website will help citizens register to vote
+
+# Services used to supply project status information
+# Items:
+# - name: Name of the service
+#   category: Type of the service
+#   url: URL for detailed information
+#   badge: URL for the status badge
+#services:
+#-
+
+# Licenses that apply to the project and/or its components (required)
+# Items by property name pattern:
+#   .*:
+#     name: Name of the license from the Software Package Data Exchange (SPDX): https://spdx.org/licenses/
+#     url: URL for the text of the license
+licenses:
+  jquery-1.11.3.min.js:
+    name: MIT
+    url: https://jquery.org/license/
+  html5shiv.js:
+    name: MIT and GPL2
+    url: https://github.com/aFarkas/html5shiv/blob/master/MIT%20and%20GPL2%20licenses.md
+  respond.js:
+    name: MIT
+    url: https://github.com/scottjehl/Respond/blob/master/LICENSE-MIT
+  nginx:
+    name: BSD
+    url: http://nginx.org/LICENSE
+  us-web-design-standards:
+    name: OFL-1.0, OFL-1.1, MIT, CC0-1.0
+    url: https://github.com/18F/web-design-standards/blob/18f-pages-staging/LICENSE.md
+
+# Tag to use when blogging about this project
+#blogTag:
+#-
+
+# Links to project artifacts
+# Items:
+# - url: URL for the link
+#   text: Anchor text for the link
+#   category: Type of the link
+#links:
+#-
+
+# URIs for points-of-contact
+# Items:
+# - url: URL for the link
+#   text: Anchor text for the link
+contact:
+- url: mailto:pif-team@gsa.gov
+  text: Andrew Stroup
