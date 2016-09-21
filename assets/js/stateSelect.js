@@ -45,6 +45,7 @@ var stateWebsites = [
   { "state": "NY", "website": "https://dmv.ny.gov/org/more-info/electronic-voter-registration-application?ref=voteusa" },
   { "state": "OR", "website": "https://secure.sos.state.or.us/orestar/vr/register.do?ref=voteusa" },
   { "state": "PA", "website": "https://www.pavoterservices.state.pa.us/Pages/VoterRegistrationApplication.aspx?ref=voteusa" },
+  { "state": "RI", "website": "https://vote.sos.ri.gov/?set_lang=english&ref=voteusa" },
   { "state": "SC", "website": "https://info.scvotes.sc.gov/eng/ovr/start.aspx?ref=voteusa" },
   { "state": "UT", "website": "https://secure.utah.gov/voterreg/index.html?ref=voteusa" },
   { "state": "VA", "website": "https://www.vote.virginia.gov/?ref=voteusa" },
